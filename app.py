@@ -84,6 +84,10 @@ st.markdown(
         justify-content:center; font-size:26px;
     }
     .pb-footer-note{ color:var(--pb-text-light); font-size:0.78rem; margin-top:1.5rem; }
+
+    div[data-testid="stSelectbox"] div[data-baseweb="select"] > div{
+        border: 1px solid rgba(49, 51, 63, 0.2) !important;
+    }
     </style>
     """,
     unsafe_allow_html=True,
