@@ -1,6 +1,5 @@
 import json
 import time
-from difflib import SequenceMatcher
 from pathlib import Path
 
 import streamlit as st
@@ -18,92 +17,73 @@ BASE_DIR = Path(__file__).parent
 DATA_PATH = BASE_DIR / "data" / "pickbrief_mock_data.json"
 LOGO_PATH = BASE_DIR / "assets" / "cosmax_logo.jpg"
 
-ACCENT = "#D96C8C"       # 로즈핑크 포인트
-ACCENT_DARK = "#B24E6C"
-BG = "#FBF7F4"           # 화이트/베이지 톤
-CARD_BG = "#FFFFFF"
+BRAND_NONE = "브랜드 무관 (전체 비교)"
 
 # ------------------------------------------------------------------
-# 스타일
+# 스타일 (팔레트는 PickBrief 프로토타입 톤을 그대로 사용)
 # ------------------------------------------------------------------
 st.markdown(
-    f"""
+    """
     <style>
-    .stApp {{
-        background-color: {BG};
-    }}
-    .pb-hero {{
-        padding: 1.2rem 0 0.4rem 0;
-    }}
-    .pb-title {{
-        font-size: 2.1rem;
-        font-weight: 800;
-        color: #2B2B2B;
-        margin-bottom: 0.1rem;
-    }}
-    .pb-subtitle {{
-        font-size: 1.02rem;
-        color: #6B6B6B;
-        margin-bottom: 0.6rem;
-    }}
-    .pb-badge {{
-        display:inline-block;
-        background:{ACCENT};
-        color:white;
-        padding:2px 10px;
-        border-radius:999px;
-        font-size:0.75rem;
-        font-weight:600;
-        letter-spacing:0.02em;
-        margin-bottom:0.6rem;
-    }}
-    .pb-card {{
-        background:{CARD_BG};
-        border-radius:16px;
-        padding:1.3rem 1.4rem;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-        border: 1px solid #F0E7E2;
-        margin-bottom: 1rem;
-        height: 100%;
-    }}
-    .pb-score {{
-        font-size:2.0rem;
-        font-weight:800;
-        color:{ACCENT_DARK};
-    }}
-    .pb-rank {{
-        display:inline-block;
-        background:{BG};
-        border:1px solid {ACCENT};
-        color:{ACCENT_DARK};
-        font-weight:700;
-        font-size:0.8rem;
-        padding:2px 10px;
-        border-radius:999px;
-        margin-bottom:0.5rem;
-    }}
-    .pb-chip {{
-        display:inline-block;
-        background:#F6ECEF;
-        color:{ACCENT_DARK};
-        font-size:0.78rem;
-        padding:3px 10px;
-        border-radius:999px;
-        margin:2px 4px 2px 0;
-    }}
-    .pb-evidence {{
-        background:{BG};
-        border-radius:10px;
-        padding:0.6rem 0.8rem;
-        font-size:0.86rem;
-        color:#4B4B4B;
-        margin-top:0.5rem;
-    }}
-    .pb-footer-note {{
-        color:#9A9A9A;
-        font-size:0.78rem;
-        margin-top:2rem;
-    }}
+    :root{
+        --pb-bg:#F8F6F4;
+        --pb-primary:#A69B94;
+        --pb-primary-dark:#857A73;
+        --pb-primary-soft:#EFEAE7;
+        --pb-secondary:#2F4A3C;
+        --pb-secondary-dark:#23372C;
+        --pb-secondary-soft:#E4EBE6;
+        --pb-accent:#C9583F;
+        --pb-border:#E3DDD8;
+        --pb-beige-dark:#DDD6D1;
+        --pb-text-light:#8F8580;
+    }
+    .stApp{ background-color: var(--pb-bg); }
+
+    .pb-badge{
+        display:inline-block; background:var(--pb-secondary-soft); color:var(--pb-secondary);
+        padding:3px 12px; border-radius:100px; font-size:0.75rem; font-weight:700; margin-bottom:0.5rem;
+    }
+    .pb-title{ font-size:1.9rem; font-weight:800; margin:0 0 0.1rem; letter-spacing:-0.3px; }
+    .pb-subtitle{ font-size:0.98rem; color:var(--pb-text-light); margin-bottom:0.4rem; }
+
+    .pb-cardtop{
+        border-radius:12px; height:64px; display:flex; align-items:center; justify-content:center;
+        font-size:28px; position:relative; margin-bottom:8px;
+    }
+    .pb-rankflag{
+        position:absolute; top:8px; left:8px; background:rgba(255,255,255,0.9);
+        color:var(--pb-primary-dark); font-size:11px; font-weight:800; padding:3px 9px; border-radius:100px;
+    }
+    .pb-ratingbadge{
+        padding:6px 12px; border-radius:100px; background:var(--pb-secondary-soft);
+        color:var(--pb-secondary); font-size:13px; font-weight:800; text-align:center; white-space:nowrap;
+    }
+
+    .score-ring{
+        --score:0; width:52px; height:52px; border-radius:50%; margin-left:auto;
+        background:conic-gradient(var(--pb-accent) calc(var(--score)*1%), var(--pb-beige-dark) 0);
+        display:flex; align-items:center; justify-content:center;
+    }
+    .score-ring-inner{
+        width:42px; height:42px; border-radius:50%; background:#fff;
+        display:flex; align-items:center; justify-content:center;
+        font-size:12px; font-weight:800; color:var(--pb-accent);
+    }
+
+    .pb-chip{
+        display:inline-block; background:var(--pb-primary-soft); color:var(--pb-primary-dark);
+        font-size:0.78rem; font-weight:700; padding:4px 11px; border-radius:100px; margin:2px 4px 2px 0;
+    }
+    .pb-reasonbox{
+        background:var(--pb-secondary-soft); border-radius:10px; padding:0.7rem 0.9rem;
+        font-size:0.9rem; line-height:1.6; color:#242424; margin:0.3rem 0 0.8rem;
+    }
+    .pb-modalicon{
+        width:54px; height:54px; border-radius:12px; display:flex; align-items:center;
+        justify-content:center; font-size:26px;
+    }
+    .pb-footer-note{ color:var(--pb-text-light); font-size:0.78rem; margin-top:1.5rem; }
     </style>
     """,
     unsafe_allow_html=True,
@@ -111,7 +91,7 @@ st.markdown(
 
 
 # ------------------------------------------------------------------
-# 데이터 로드
+# 데이터 로드 및 인덱싱
 # ------------------------------------------------------------------
 @st.cache_data
 def load_data():
@@ -120,100 +100,106 @@ def load_data():
 
 
 @st.cache_data
-def all_keywords(data):
-    kws = set()
+def build_indexes(data):
+    categories = []
+    products_by_category = {}
+    brands_by_category = {}
+    keywords_by_category = {}
+
     for p in data:
-        kws.update(p.get("keyword_sentiment", {}).keys())
-    return sorted(kws)
+        if p["category"] not in categories:
+            categories.append(p["category"])
+        products_by_category.setdefault(p["category"], []).append(p)
+
+        brands = brands_by_category.setdefault(p["category"], [])
+        if p["brand"] not in brands:
+            brands.append(p["brand"])
+
+        kws = keywords_by_category.setdefault(p["category"], [])
+        for k in p.get("keyword_sentiment", {}):
+            if k not in kws:
+                kws.append(k)
+
+    for c in categories:
+        brands_by_category[c].sort()
+        keywords_by_category[c].sort()
+
+    return categories, products_by_category, brands_by_category, keywords_by_category
 
 
-@st.cache_data
-def all_categories(data):
-    return sorted(set(p["category"] for p in data))
+def get_category_meta(category):
+    if category and "선크림" in category:
+        return {"icon": "☀️", "grad": "linear-gradient(135deg,#E4EBE6,#CFE0D5)"}
+    if category and "색조" in category:
+        return {"icon": "💄", "grad": "linear-gradient(135deg,#F6E4E8,#EFD2D9)"}
+    if category and "기초" in category:
+        return {"icon": "🧴", "grad": "linear-gradient(135deg,#EAF1F7,#D3E3EE)"}
+    return {"icon": "✨", "grad": "linear-gradient(135deg,#F1E9DF,#E7DCCC)"}
 
 
 # ------------------------------------------------------------------
 # 매칭 / 스코어링 로직 (베타: 규칙 기반, AI API 미사용)
 # ------------------------------------------------------------------
-def score_product(product, benchmark_name, keywords, category):
-    """제품 하나에 대한 매칭 스코어(0~100)와 근거를 계산한다."""
-    score = 0.0
-    matched = []
+def calculate_score(product, selected_keywords, selected_brand):
+    stats = product.get("keyword_sentiment", {})
+    basis = selected_keywords if selected_keywords else list(stats.keys())
 
-    # 1) 카테고리 일치 가중치
-    if category and category != "전체":
-        if product["category"] != category:
-            return None  # 카테고리 필터에서 제외
-        score += 10
+    total = 0.0
+    for kw in basis:
+        stat = stats.get(kw)
+        if not stat:
+            continue
+        relevance = min(stat["mentioned_count"] / product["review_count"], 1.0)
+        positivity = stat["positive_pct"] / 100
+        total += relevance * 0.4 + positivity * 0.6
 
-    # 2) 벤치마크 제품명 텍스트 유사도 (브랜드/제품명 기준)
-    if benchmark_name.strip():
-        target_texts = [product["name"], product["brand"]]
-        best_ratio = max(
-            SequenceMatcher(None, benchmark_name.strip(), t).ratio()
-            for t in target_texts
-        )
-        score += best_ratio * 25
-
-    # 3) 감성 키워드 매칭 (언급량 + 긍정 비율 반영)
-    ks = product.get("keyword_sentiment", {})
-    keyword_points = 0.0
-    for kw in keywords:
-        if kw in ks:
-            info = ks[kw]
-            volume_factor = min(info["mentioned_count"] / 1500, 1.0)
-            keyword_points += (info["positive_pct"] / 100) * (0.5 + 0.5 * volume_factor)
-            matched.append((kw, info))
-    if keywords:
-        keyword_points = keyword_points / len(keywords)  # 평균화
-    score += keyword_points * 45
-
-    # 4) 제품 자체 신뢰도(평점 + 후기량) 보정
-    score += (product["avg_rating"] / 5) * 12
-    score += min(product["review_count"] / 8000, 1.0) * 8
-
-    return {
-        "product": product,
-        "score": min(round(score, 1), 100),
-        "matched_keywords": matched,
-    }
+    base = (total / len(basis)) * 100 if basis else 0.0
+    bonus = 8 if (selected_brand and product["brand"] == selected_brand) else 0
+    return max(28, min(99, round(base + bonus)))
 
 
-def get_recommendations(data, benchmark_name, keywords, category, top_n=3):
-    scored = []
-    for p in data:
-        result = score_product(p, benchmark_name, keywords, category)
-        if result is not None:
-            scored.append(result)
-    scored.sort(key=lambda x: x["score"], reverse=True)
+def rank_products(products_by_category, category, selected_keywords, selected_brand, top_n=3):
+    products = products_by_category.get(category, [])
+    scored = [(p, calculate_score(p, selected_keywords, selected_brand)) for p in products]
+    scored.sort(key=lambda x: x[1], reverse=True)
     return scored[:top_n]
 
 
-def build_brief(result):
-    """추천 이유(미니 브리프) 텍스트 생성"""
-    product = result["product"]
-    matched = sorted(result["matched_keywords"], key=lambda x: x[1]["mentioned_count"], reverse=True)
+def top_keywords_for_product(product, selected_keywords):
+    stats = product.get("keyword_sentiment", {})
+    pool = [k for k in selected_keywords if stats.get(k, {}).get("mentioned_count", 0) > 0]
+    if not pool:
+        pool = sorted(stats.keys(), key=lambda k: stats[k]["mentioned_count"], reverse=True)
+    return pool[:4]
 
-    lines = []
-    if matched:
-        top_kw, top_info = matched[0]
-        lines.append(
-            f"'{top_kw}' 관련 후기 {top_info['mentioned_count']:,}건 중 "
-            f"{top_info['positive_pct']}% 긍정 언급"
+
+def build_reason(product, score, selected_keywords, selected_brand, top_keywords):
+    stats = product.get("keyword_sentiment", {})
+    parts = []
+
+    primary_kw = top_keywords[0] if top_keywords else None
+    primary_stat = stats.get(primary_kw) if primary_kw else None
+    is_recommendation = score is not None
+
+    if primary_stat and is_recommendation:
+        parts.append(
+            f"'{primary_kw}' 관련 후기 {primary_stat['mentioned_count']:,}건 중 "
+            f"{primary_stat['positive_pct']}%가 긍정 반응을 보여, 요청하신 감성 조건과 가장 잘 맞는 제품입니다."
         )
-        if len(matched) > 1:
-            kw2, info2 = matched[1]
-            lines.append(
-                f"'{kw2}' 관련 후기 {info2['mentioned_count']:,}건 중 "
-                f"{info2['positive_pct']}% 긍정 언급"
-            )
-    else:
-        lines.append("선택한 감성 키워드에 대한 직접 언급 데이터는 적지만, 카테고리·평점 기준 상위 제품입니다.")
+    elif primary_stat:
+        parts.append(
+            f"'{primary_kw}' 관련 후기 {primary_stat['mentioned_count']:,}건 중 "
+            f"{primary_stat['positive_pct']}%가 긍정 반응을 보였습니다."
+        )
 
-    ingredient_line = "핵심 원료: " + ", ".join(product["key_ingredients"])
-    source_line = f"출처: {product['channel']} · 리뷰 {product['review_count']:,}건 · 평점 {product['avg_rating']}"
+    if is_recommendation and selected_brand and product["brand"] == selected_brand:
+        parts.append(f"선택하신 벤치마크 브랜드({selected_brand})와 동일한 브랜드 라인입니다.")
 
-    return lines, ingredient_line, source_line
+    parts.append(
+        f"총 {product['review_count']:,}건의 후기가 {product['channel']} 채널에서 수집되어 "
+        f"근거 데이터의 신뢰도가 높습니다."
+    )
+    return " ".join(parts)
 
 
 # ------------------------------------------------------------------
@@ -222,40 +208,77 @@ def build_brief(result):
 if "stage" not in st.session_state:
     st.session_state.stage = "input"
 if "form" not in st.session_state:
-    st.session_state.form = {}
+    st.session_state.form = {"category": None, "brand": "", "keywords": []}
 if "results" not in st.session_state:
     st.session_state.results = []
 
 
-def go_to_input():
-    st.session_state.stage = "input"
-
-
-def submit_form(benchmark_name, keywords, category):
-    st.session_state.form = {
-        "benchmark_name": benchmark_name,
-        "keywords": keywords,
-        "category": category,
-    }
+def submit_form(category, brand, keywords):
+    st.session_state.form = {"category": category, "brand": brand, "keywords": keywords}
     st.session_state.stage = "loading"
 
 
-def run_analysis(data):
+def run_analysis(products_by_category):
     form = st.session_state.form
-    st.session_state.results = get_recommendations(
-        data,
-        form.get("benchmark_name", ""),
-        form.get("keywords", []),
-        form.get("category", "전체"),
+    st.session_state.results = rank_products(
+        products_by_category, form["category"], form["keywords"], form["brand"]
     )
-    st.session_state.stage = "result"
+    st.session_state.stage = "results"
 
 
 # ------------------------------------------------------------------
-# 헤더 (공통)
+# 상세 정보 모달
+# ------------------------------------------------------------------
+@st.dialog("제품 상세 정보", width="large")
+def show_detail_dialog(product, score, selected_keywords, selected_brand):
+    meta = get_category_meta(product["category"])
+    top_kws = top_keywords_for_product(product, selected_keywords or [])
+    reason = build_reason(product, score, selected_keywords or [], selected_brand, top_kws)
+
+    col_icon, col_title = st.columns([1, 5])
+    with col_icon:
+        st.markdown(
+            f'<div class="pb-modalicon" style="background:{meta["grad"]}">{meta["icon"]}</div>',
+            unsafe_allow_html=True,
+        )
+    with col_title:
+        st.markdown(f"### {product['name']}")
+        st.caption(f"{product['brand']} · {product['subtype']}")
+
+    st.markdown("##### 추천 이유")
+    st.markdown(f'<div class="pb-reasonbox">{reason}</div>', unsafe_allow_html=True)
+
+    st.markdown("##### 핵심 성분")
+    st.markdown(
+        "".join(f'<span class="pb-chip">{ing}</span>' for ing in product["key_ingredients"]),
+        unsafe_allow_html=True,
+    )
+
+    st.markdown("##### 키워드별 언급 현황")
+    for kw in top_kws:
+        stat = product["keyword_sentiment"].get(kw)
+        if stat:
+            st.markdown(f"- **{kw}** — 관련 후기 {stat['mentioned_count']:,}건 중 **{stat['positive_pct']}% 긍정**")
+
+    col_a, col_b = st.columns(2)
+    with col_a:
+        st.metric("총 후기 건수", f"{product['review_count']:,}건")
+    with col_b:
+        if score is not None:
+            st.metric("매칭 스코어", f"{score}%")
+        else:
+            st.metric("평균 평점", f"{product['avg_rating']:.1f} / 5.0")
+
+    st.markdown("##### 판매 채널")
+    st.markdown(f'<span class="pb-chip">{product["channel"]}</span>', unsafe_allow_html=True)
+    st.caption(f"약 {product['price_krw']:,}원")
+
+
+# ------------------------------------------------------------------
+# 공통 컴포넌트
 # ------------------------------------------------------------------
 def render_header():
-    col_logo, col_text = st.columns([1, 5])
+    col_logo, col_text = st.columns([1, 6])
     with col_logo:
         if LOGO_PATH.exists():
             st.image(str(LOGO_PATH), use_container_width=True)
@@ -263,49 +286,82 @@ def render_header():
         st.markdown('<div class="pb-badge">BETA</div>', unsafe_allow_html=True)
         st.markdown('<div class="pb-title">픽브리프 PickBrief</div>', unsafe_allow_html=True)
         st.markdown(
-            '<div class="pb-subtitle">벤치마크 제품이나 감성 키워드만 입력하면, '
-            '후기 데이터 기반으로 매칭된 대표 아이템 3개와 기획 브리프를 즉시 뽑아드립니다.</div>',
+            '<div class="pb-subtitle">카테고리와 벤치마크 브랜드, 원하는 감성 키워드만 알려주시면 '
+            '후기 데이터 기반으로 매칭된 대표 아이템 3개와 추천 근거를 즉시 뽑아드립니다.</div>',
             unsafe_allow_html=True,
         )
     st.divider()
 
 
+def render_product_card(product, meta, key_prefix, rank_label=None, score=None,
+                         selected_keywords=None, selected_brand=None):
+    with st.container(border=True):
+        flag_html = f'<span class="pb-rankflag">{rank_label}</span>' if rank_label else ""
+        st.markdown(
+            f'<div class="pb-cardtop" style="background:{meta["grad"]}">{flag_html}<span>{meta["icon"]}</span></div>',
+            unsafe_allow_html=True,
+        )
+
+        col_name, col_score = st.columns([3, 1])
+        with col_name:
+            st.markdown(f"**{product['name']}**")
+            st.caption(f"{product['brand']} · {product['subtype']}")
+        with col_score:
+            if score is not None:
+                st.markdown(
+                    f'<div class="score-ring" style="--score:{score}">'
+                    f'<div class="score-ring-inner">{score}%</div></div>',
+                    unsafe_allow_html=True,
+                )
+            else:
+                st.markdown(f'<div class="pb-ratingbadge">⭐ {product["avg_rating"]:.1f}</div>', unsafe_allow_html=True)
+
+        if st.button("자세히 보기 →", key=f"{key_prefix}_{product['id']}", use_container_width=True):
+            show_detail_dialog(product, score, selected_keywords, selected_brand)
+
+
 # ------------------------------------------------------------------
 # 화면 1: 입력
 # ------------------------------------------------------------------
-def render_input_screen(data):
+def render_input_screen(categories, brands_by_category, keywords_by_category):
     render_header()
 
     st.markdown("##### 추천 조건 입력")
-    categories = ["전체"] + all_categories(data)
-    keywords_options = all_keywords(data)
+    category = st.selectbox(
+        "카테고리 선택", options=categories, index=None, placeholder="카테고리를 선택하세요",
+        key="input_category",
+    )
 
-    with st.form("pickbrief_input_form"):
-        col1, col2 = st.columns([3, 2])
-        with col1:
-            benchmark_name = st.text_input(
-                "벤치마크 제품명",
-                placeholder="예: 설화수 톤업 선크림, 입생로랑 쿠션 ...",
-                help="비교하고 싶은 벤치마크 제품명을 입력하세요. (자사/시중 제품 모두 가능)",
-            )
-        with col2:
-            category = st.selectbox("카테고리", categories, index=0)
+    brand = BRAND_NONE
+    selected_keywords = []
 
-        keywords = st.multiselect(
-            "원하는 느낌 / 감성 키워드",
-            options=keywords_options,
-            default=[],
-            help="후기 데이터에서 자주 언급되는 감성 키워드 중 원하는 방향을 선택하세요.",
+    if category:
+        brand_options = [BRAND_NONE] + brands_by_category.get(category, [])
+        brand = st.selectbox(
+            "벤치마크 브랜드 (선택, 검색 가능)",
+            options=brand_options,
+            index=0,
+            key=f"input_brand__{category}",
         )
 
-        submitted = st.form_submit_button("🔍 대표 아이템 3개 분석하기", use_container_width=True, type="primary")
+        st.markdown("**원하는 느낌 / 감성 키워드** (1개 이상 선택)")
+        selected_keywords = st.pills(
+            "keyword_pills",
+            options=keywords_by_category.get(category, []),
+            selection_mode="multi",
+            label_visibility="collapsed",
+            key=f"input_keywords__{category}",
+        ) or []
+    else:
+        st.caption("카테고리를 먼저 선택하세요")
 
-        if submitted:
-            if not benchmark_name.strip() and not keywords:
-                st.warning("벤치마크 제품명 또는 감성 키워드를 최소 1개 이상 입력해주세요.")
-            else:
-                submit_form(benchmark_name, keywords, category)
-                st.rerun()
+    ready = bool(category) and bool(selected_keywords)
+    if st.button("🔍 대표 아이템 3개 분석하기", type="primary", use_container_width=True, disabled=not ready):
+        real_brand = "" if brand == BRAND_NONE else brand
+        submit_form(category, real_brand, selected_keywords)
+        st.rerun()
+    if not ready:
+        st.caption("카테고리를 선택하고 감성 키워드를 1개 이상 골라주세요")
 
     st.markdown(
         '<div class="pb-footer-note">※ 본 베타는 목업(mock) 데이터를 기반으로 동작하며, '
@@ -313,88 +369,89 @@ def render_input_screen(data):
         unsafe_allow_html=True,
     )
 
+    st.divider()
+    if st.button("전체 상품 둘러보기 →", use_container_width=True):
+        st.session_state.stage = "browse"
+        st.rerun()
+
 
 # ------------------------------------------------------------------
 # 화면 2: 분석 중
 # ------------------------------------------------------------------
-def render_loading_screen(data):
+def render_loading_screen(products_by_category):
     render_header()
 
     placeholder = st.empty()
     progress = st.progress(0)
 
     steps = [
-        ("후기 데이터 수집 중...", 25),
-        ("감성 키워드 매칭 분석 중...", 55),
-        ("유사 제품 유사도 스코어링 중...", 80),
-        ("대표 아이템 3개 선별 및 브리프 생성 중...", 100),
+        ("후기 데이터를 수집하고 있어요...", 25),
+        ("감성 키워드를 분석하고 있어요...", 55),
+        ("유사 제품을 매칭하고 있어요...", 80),
+        ("추천 브리프를 생성하고 있어요...", 100),
     ]
-
     for label, pct in steps:
         placeholder.markdown(f"##### {label}")
         progress.progress(pct)
-        time.sleep(0.6)
+        time.sleep(0.5)
 
-    run_analysis(data)
+    run_analysis(products_by_category)
     st.rerun()
 
 
 # ------------------------------------------------------------------
 # 화면 3: 결과
 # ------------------------------------------------------------------
-def render_result_screen(data):
+def render_results_screen():
     render_header()
 
     form = st.session_state.form
-    summary_bits = []
-    if form.get("benchmark_name"):
-        summary_bits.append(f"벤치마크 **{form['benchmark_name']}**")
-    if form.get("keywords"):
-        summary_bits.append("키워드 " + ", ".join(f"`{k}`" for k in form["keywords"]))
-    if form.get("category") and form["category"] != "전체":
-        summary_bits.append(f"카테고리 **{form['category']}**")
-
-    if summary_bits:
-        st.markdown("조건: " + " · ".join(summary_bits))
-
-    results = st.session_state.results
-
-    if not results:
-        st.info("조건에 맞는 추천 결과가 없습니다. 카테고리를 '전체'로 바꿔보세요.")
-    else:
-        cols = st.columns(len(results))
-        for rank, (col, result) in enumerate(zip(cols, results), start=1):
-            product = result["product"]
-            lines, ingredient_line, source_line = build_brief(result)
-
-            with col:
-                st.markdown('<div class="pb-card">', unsafe_allow_html=True)
-                st.markdown(f'<div class="pb-rank">추천 {rank}순위</div>', unsafe_allow_html=True)
-                st.markdown(f"**{product['name']}**")
-                st.caption(f"{product['brand']} · {product['subtype']}")
-                st.markdown(f'<div class="pb-score">{result["score"]}%</div>', unsafe_allow_html=True)
-                st.caption("매칭 스코어")
-
-                st.markdown(
-                    "".join(f'<span class="pb-chip">{ing}</span>' for ing in product["key_ingredients"]),
-                    unsafe_allow_html=True,
-                )
-
-                evidence_html = "".join(f"<div>• {line}</div>" for line in lines)
-                st.markdown(
-                    f'<div class="pb-evidence">{evidence_html}'
-                    f'<div style="margin-top:6px;">{ingredient_line}</div>'
-                    f'<div>{source_line}</div></div>',
-                    unsafe_allow_html=True,
-                )
-
-                st.markdown(f"가격대: 약 {product['price_krw']:,}원")
-                st.markdown('</div>', unsafe_allow_html=True)
-
-    st.write("")
-    if st.button("↩︎ 새 조건으로 다시 분석하기", use_container_width=True):
-        go_to_input()
+    brand_label = form["brand"] or "브랜드 무관"
+    st.markdown(
+        f"조건: 카테고리 **{form['category']}** · 벤치마크 브랜드 **{brand_label}** · "
+        f"키워드 **{', '.join(form['keywords'])}**"
+    )
+    if st.button("↩︎ 새 조건으로 다시 검색하기"):
+        st.session_state.stage = "input"
         st.rerun()
+
+    st.markdown("#### 후기 데이터 기반 매칭 결과 TOP 3")
+    results = st.session_state.results
+    if not results:
+        st.info("조건에 맞는 추천 결과가 없습니다.")
+        return
+
+    meta = get_category_meta(form["category"])
+    cols = st.columns(len(results))
+    for idx, (col, (product, score)) in enumerate(zip(cols, results)):
+        with col:
+            render_product_card(
+                product, meta, key_prefix="result", rank_label=f"TOP {idx + 1}", score=score,
+                selected_keywords=form["keywords"], selected_brand=form["brand"],
+            )
+
+
+# ------------------------------------------------------------------
+# 화면 4: 전체 상품 둘러보기
+# ------------------------------------------------------------------
+def render_browse_screen(data, categories, products_by_category):
+    render_header()
+
+    if st.button("← 처음으로"):
+        st.session_state.stage = "input"
+        st.rerun()
+
+    st.markdown("#### 전체 상품 둘러보기")
+    filter_category = st.selectbox("카테고리 필터", options=["전체"] + categories, index=0, key="browse_category")
+    products = data if filter_category == "전체" else products_by_category.get(filter_category, [])
+    st.caption(f"{filter_category} · {len(products)}개 제품")
+
+    for i in range(0, len(products), 3):
+        row = products[i:i + 3]
+        cols = st.columns(3)
+        for col, product in zip(cols, row):
+            with col:
+                render_product_card(product, get_category_meta(product["category"]), key_prefix="browse")
 
 
 # ------------------------------------------------------------------
@@ -402,13 +459,16 @@ def render_result_screen(data):
 # ------------------------------------------------------------------
 def main():
     data = load_data()
+    categories, products_by_category, brands_by_category, keywords_by_category = build_indexes(data)
 
     if st.session_state.stage == "input":
-        render_input_screen(data)
+        render_input_screen(categories, brands_by_category, keywords_by_category)
     elif st.session_state.stage == "loading":
-        render_loading_screen(data)
-    elif st.session_state.stage == "result":
-        render_result_screen(data)
+        render_loading_screen(products_by_category)
+    elif st.session_state.stage == "results":
+        render_results_screen()
+    elif st.session_state.stage == "browse":
+        render_browse_screen(data, categories, products_by_category)
 
 
 if __name__ == "__main__":
