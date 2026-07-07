@@ -85,8 +85,11 @@ st.markdown(
     }
     .pb-footer-note{ color:var(--pb-text-light); font-size:0.78rem; margin-top:1.5rem; }
 
-    div[data-testid="stSelectbox"] div[data-baseweb="select"] > div{
-        border: 1px solid rgba(49, 51, 63, 0.2) !important;
+    div[data-testid="stSelectbox"] div[data-baseweb="select"],
+    div[data-testid="stSelectbox"] div[data-baseweb="select"] > div,
+    div[data-testid="stSelectbox"] div[data-baseweb="select"] > div > div{
+        border: 1px solid rgba(49, 51, 63, 0.4) !important;
+        border-radius: 0.5rem !important;
     }
     </style>
     """,
