@@ -1,0 +1,4550 @@
+// PickBrief beta mock data
+// Usage: paste this entire content inside a <script> tag in index.html
+// Available as a JS array named pickbriefData
+
+const pickbriefData = [
+  {
+    "id": "SUN001",
+    "name": "\uc124\ud654\uc218 \ud1a4\uc5c5 \uc120\ud06c\ub9bc",
+    "brand": "\uc124\ud654\uc218",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\ud1a4\uc5c5 \uc120\ud06c\ub9bc",
+    "price_krw": 26000,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 2126,
+    "avg_rating": 4.0,
+    "key_ingredients": [
+      "\uc720\uae30\uc790\ucc28(\uc625\ud1a0\ud06c\ub9b4\ub80c)",
+      "\ub179\ucc28\ucd94\ucd9c\ubb3c",
+      "\ubb34\uae30\uc790\ucc28(\ud2f0\ud0c0\ub284\ub514\uc625\uc0ac\uc774\ub4dc)"
+    ],
+    "keyword_sentiment": {
+      "\ubc31\ud0c1\uc5c6\uc74c": {
+        "mentioned_count": 588,
+        "positive_pct": 70
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 634,
+        "positive_pct": 92
+      }
+    }
+  },
+  {
+    "id": "SUN002",
+    "name": "\uc13c\uce74 \ucfe8\ub9c1 \uc120\ud06c\ub9bc",
+    "brand": "\uc13c\uce74",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\ucfe8\ub9c1 \uc120\ud06c\ub9bc",
+    "price_krw": 33400,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 1925,
+    "avg_rating": 4.1,
+    "key_ingredients": [
+      "\ud310\ud14c\ub180",
+      "\ubb34\uae30\uc790\ucc28(\uc9d5\ud06c\uc625\uc0ac\uc774\ub4dc)",
+      "\uc2dc\uce74(\ub9c8\ub370\uce74\uc18c\uc0ac\uc774\ub4dc)"
+    ],
+    "keyword_sentiment": {
+      "\ub048\uc801\uc784\uc5c6\uc74c": {
+        "mentioned_count": 193,
+        "positive_pct": 92
+      },
+      "\ucfe8\ub9c1\uac10": {
+        "mentioned_count": 378,
+        "positive_pct": 82
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 189,
+        "positive_pct": 78
+      }
+    }
+  },
+  {
+    "id": "SUN003",
+    "name": "\ub2ec\ubc14 \ubb34\uae30\uc790\ucc28 \uc120\ud06c\ub9bc",
+    "brand": "\ub2ec\ubc14",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\ubb34\uae30\uc790\ucc28 \uc120\ud06c\ub9bc",
+    "price_krw": 25500,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 6731,
+    "avg_rating": 4.8,
+    "key_ingredients": [
+      "\ub179\ucc28\ucd94\ucd9c\ubb3c",
+      "\uc2dc\uce74(\ub9c8\ub370\uce74\uc18c\uc0ac\uc774\ub4dc)",
+      "\uc720\uae30\uc790\ucc28(\uc625\ud1a0\ud06c\ub9b4\ub80c)"
+    ],
+    "keyword_sentiment": {
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 2226,
+        "positive_pct": 72
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 1580,
+        "positive_pct": 70
+      }
+    }
+  },
+  {
+    "id": "SUN004",
+    "name": "\ubbf8\uc0e4 \ud1a4\uc5c5 \uc120\ud06c\ub9bc",
+    "brand": "\ubbf8\uc0e4",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\ud1a4\uc5c5 \uc120\ud06c\ub9bc",
+    "price_krw": 23600,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 6452,
+    "avg_rating": 4.2,
+    "key_ingredients": [
+      "\uc800\ubc31\ud0c1 \ucf54\ud305 \ud30c\uc6b0\ub354",
+      "\ubb34\uae30\uc790\ucc28(\uc9d5\ud06c\uc625\uc0ac\uc774\ub4dc)",
+      "\uc720\uae30\uc790\ucc28(\uc6b0\ube48\uc0b0)"
+    ],
+    "keyword_sentiment": {
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 1586,
+        "positive_pct": 82
+      },
+      "\ubc31\ud0c1\uc5c6\uc74c": {
+        "mentioned_count": 1887,
+        "positive_pct": 88
+      },
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 696,
+        "positive_pct": 88
+      }
+    }
+  },
+  {
+    "id": "SUN005",
+    "name": "\uc13c\uce74 \uc120\uc2a4\ud2f1 2.0",
+    "brand": "\uc13c\uce74",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\uc120\uc2a4\ud2f1",
+    "price_krw": 20300,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 3906,
+    "avg_rating": 4.1,
+    "key_ingredients": [
+      "\ub179\ucc28\ucd94\ucd9c\ubb3c",
+      "\uc2dc\uce74(\ub9c8\ub370\uce74\uc18c\uc0ac\uc774\ub4dc)",
+      "\uc720\uae30\uc790\ucc28(\uc625\ud1a0\ud06c\ub9b4\ub80c)"
+    ],
+    "keyword_sentiment": {
+      "\ucfe8\ub9c1\uac10": {
+        "mentioned_count": 694,
+        "positive_pct": 68
+      },
+      "\ub048\uc801\uc784\uc5c6\uc74c": {
+        "mentioned_count": 499,
+        "positive_pct": 67
+      },
+      "\ubc31\ud0c1\uc5c6\uc74c": {
+        "mentioned_count": 676,
+        "positive_pct": 90
+      }
+    }
+  },
+  {
+    "id": "SUN006",
+    "name": "\uc124\ud654\uc218 \uc57d\uc0b0\uc131 \uc120\ud06c\ub9bc \ud50c\ub7ec\uc2a4",
+    "brand": "\uc124\ud654\uc218",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\uc57d\uc0b0\uc131 \uc120\ud06c\ub9bc",
+    "price_krw": 44900,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 3878,
+    "avg_rating": 4.4,
+    "key_ingredients": [
+      "\uc720\uae30\uc790\ucc28(\uc6b0\ube48\uc0b0)",
+      "\uc54c\ub85c\uc5d0\ubca0\ub77c\uc78e\uc999",
+      "\ub098\uc774\uc544\uc2e0\uc544\ub9c8\uc774\ub4dc"
+    ],
+    "keyword_sentiment": {
+      "\ucfe8\ub9c1\uac10": {
+        "mentioned_count": 535,
+        "positive_pct": 81
+      },
+      "\ubc31\ud0c1\uc5c6\uc74c": {
+        "mentioned_count": 1227,
+        "positive_pct": 92
+      }
+    }
+  },
+  {
+    "id": "SUN007",
+    "name": "\ub2e5\ud130\uc9c0 \uc120\ucfe0\uc158",
+    "brand": "\ub2e5\ud130\uc9c0",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\uc120\ucfe0\uc158",
+    "price_krw": 17600,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 1372,
+    "avg_rating": 4.8,
+    "key_ingredients": [
+      "\uc2dc\uce74(\ub9c8\ub370\uce74\uc18c\uc0ac\uc774\ub4dc)",
+      "\ubb34\uae30\uc790\ucc28(\uc9d5\ud06c\uc625\uc0ac\uc774\ub4dc)",
+      "\uc800\ubc31\ud0c1 \ucf54\ud305 \ud30c\uc6b0\ub354"
+    ],
+    "keyword_sentiment": {
+      "\ubc31\ud0c1\uc5c6\uc74c": {
+        "mentioned_count": 225,
+        "positive_pct": 94
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 300,
+        "positive_pct": 81
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 313,
+        "positive_pct": 65
+      },
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 378,
+        "positive_pct": 72
+      }
+    }
+  },
+  {
+    "id": "SUN008",
+    "name": "\uba54\ub514\ud790 \ucfe8\ub9c1 \uc120\ud06c\ub9bc \ud50c\ub7ec\uc2a4",
+    "brand": "\uba54\ub514\ud790",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\ucfe8\ub9c1 \uc120\ud06c\ub9bc",
+    "price_krw": 12100,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 7933,
+    "avg_rating": 4.6,
+    "key_ingredients": [
+      "\ub098\uc774\uc544\uc2e0\uc544\ub9c8\uc774\ub4dc",
+      "\ubb34\uae30\uc790\ucc28(\ud2f0\ud0c0\ub284\ub514\uc625\uc0ac\uc774\ub4dc)",
+      "\ubb34\uae30\uc790\ucc28(\uc9d5\ud06c\uc625\uc0ac\uc774\ub4dc)"
+    ],
+    "keyword_sentiment": {
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 465,
+        "positive_pct": 84
+      },
+      "\ucfe8\ub9c1\uac10": {
+        "mentioned_count": 2109,
+        "positive_pct": 77
+      },
+      "\ubc31\ud0c1\uc5c6\uc74c": {
+        "mentioned_count": 656,
+        "positive_pct": 88
+      },
+      "\ub048\uc801\uc784\uc5c6\uc74c": {
+        "mentioned_count": 691,
+        "positive_pct": 98
+      }
+    }
+  },
+  {
+    "id": "SUN009",
+    "name": "\uc6f0\ub77c\uc96c \ubb34\uae30\uc790\ucc28 \uc120\ud06c\ub9bc PRO",
+    "brand": "\uc6f0\ub77c\uc96c",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\ubb34\uae30\uc790\ucc28 \uc120\ud06c\ub9bc",
+    "price_krw": 24200,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 594,
+    "avg_rating": 4.7,
+    "key_ingredients": [
+      "\uc54c\ub85c\uc5d0\ubca0\ub77c\uc78e\uc999",
+      "\uc720\uae30\uc790\ucc28(\uc6b0\ube48\uc0b0)",
+      "\uc800\ubc31\ud0c1 \ucf54\ud305 \ud30c\uc6b0\ub354"
+    ],
+    "keyword_sentiment": {
+      "\ub048\uc801\uc784\uc5c6\uc74c": {
+        "mentioned_count": 51,
+        "positive_pct": 96
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 47,
+        "positive_pct": 73
+      }
+    }
+  },
+  {
+    "id": "SUN010",
+    "name": "\uc13c\uce74 \uc120\ucfe0\uc158",
+    "brand": "\uc13c\uce74",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\uc120\ucfe0\uc158",
+    "price_krw": 33600,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 1855,
+    "avg_rating": 4.0,
+    "key_ingredients": [
+      "\uc54c\ub85c\uc5d0\ubca0\ub77c\uc78e\uc999",
+      "\uc720\uae30\uc790\ucc28(\uc625\ud1a0\ud06c\ub9b4\ub80c)",
+      "\ub179\ucc28\ucd94\ucd9c\ubb3c"
+    ],
+    "keyword_sentiment": {
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 412,
+        "positive_pct": 93
+      },
+      "\ubc31\ud0c1\uc5c6\uc74c": {
+        "mentioned_count": 559,
+        "positive_pct": 93
+      },
+      "\ucfe8\ub9c1\uac10": {
+        "mentioned_count": 153,
+        "positive_pct": 80
+      },
+      "\ub048\uc801\uc784\uc5c6\uc74c": {
+        "mentioned_count": 260,
+        "positive_pct": 69
+      }
+    }
+  },
+  {
+    "id": "SUN011",
+    "name": "\uc544\ub137\uc0ac \ud1a4\uc5c5 \uc120\ud06c\ub9bc",
+    "brand": "\uc544\ub137\uc0ac",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\ud1a4\uc5c5 \uc120\ud06c\ub9bc",
+    "price_krw": 23700,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 672,
+    "avg_rating": 4.5,
+    "key_ingredients": [
+      "\ub179\ucc28\ucd94\ucd9c\ubb3c",
+      "\ub098\uc774\uc544\uc2e0\uc544\ub9c8\uc774\ub4dc",
+      "\uc720\uae30\uc790\ucc28(\uc625\ud1a0\ud06c\ub9b4\ub80c)"
+    ],
+    "keyword_sentiment": {
+      "\ucfe8\ub9c1\uac10": {
+        "mentioned_count": 161,
+        "positive_pct": 80
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 101,
+        "positive_pct": 96
+      }
+    }
+  },
+  {
+    "id": "SUN012",
+    "name": "\ub124\uc774\ucc98\ub9ac\ud37c\ube14\ub9ad \uc57d\uc0b0\uc131 \uc120\ud06c\ub9bc \ud50c\ub7ec\uc2a4",
+    "brand": "\ub124\uc774\ucc98\ub9ac\ud37c\ube14\ub9ad",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\uc57d\uc0b0\uc131 \uc120\ud06c\ub9bc",
+    "price_krw": 21700,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 892,
+    "avg_rating": 4.7,
+    "key_ingredients": [
+      "\ubb34\uae30\uc790\ucc28(\uc9d5\ud06c\uc625\uc0ac\uc774\ub4dc)",
+      "\ubb34\uae30\uc790\ucc28(\ud2f0\ud0c0\ub284\ub514\uc625\uc0ac\uc774\ub4dc)",
+      "\ud310\ud14c\ub180"
+    ],
+    "keyword_sentiment": {
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 211,
+        "positive_pct": 92
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 240,
+        "positive_pct": 94
+      }
+    }
+  },
+  {
+    "id": "SUN013",
+    "name": "\ubbf8\uc0e4 \ubb34\uae30\uc790\ucc28 \uc120\ud06c\ub9bc",
+    "brand": "\ubbf8\uc0e4",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\ubb34\uae30\uc790\ucc28 \uc120\ud06c\ub9bc",
+    "price_krw": 24700,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 1689,
+    "avg_rating": 4.2,
+    "key_ingredients": [
+      "\ubb34\uae30\uc790\ucc28(\uc9d5\ud06c\uc625\uc0ac\uc774\ub4dc)",
+      "\ub098\uc774\uc544\uc2e0\uc544\ub9c8\uc774\ub4dc",
+      "\ub179\ucc28\ucd94\ucd9c\ubb3c"
+    ],
+    "keyword_sentiment": {
+      "\ub048\uc801\uc784\uc5c6\uc74c": {
+        "mentioned_count": 173,
+        "positive_pct": 92
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 217,
+        "positive_pct": 82
+      }
+    }
+  },
+  {
+    "id": "SUN014",
+    "name": "\uc544\ub137\uc0ac \uc120\uc2a4\ud2f1",
+    "brand": "\uc544\ub137\uc0ac",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\uc120\uc2a4\ud2f1",
+    "price_krw": 12700,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 884,
+    "avg_rating": 4.2,
+    "key_ingredients": [
+      "\ubb34\uae30\uc790\ucc28(\ud2f0\ud0c0\ub284\ub514\uc625\uc0ac\uc774\ub4dc)",
+      "\ud310\ud14c\ub180",
+      "\uc800\ubc31\ud0c1 \ucf54\ud305 \ud30c\uc6b0\ub354"
+    ],
+    "keyword_sentiment": {
+      "\ubc31\ud0c1\uc5c6\uc74c": {
+        "mentioned_count": 278,
+        "positive_pct": 95
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 139,
+        "positive_pct": 90
+      }
+    }
+  },
+  {
+    "id": "SUN015",
+    "name": "\uc6f0\ub77c\uc96c \uc120\ucfe0\uc158 \ud50c\ub7ec\uc2a4",
+    "brand": "\uc6f0\ub77c\uc96c",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\uc120\ucfe0\uc158",
+    "price_krw": 26600,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 3585,
+    "avg_rating": 4.6,
+    "key_ingredients": [
+      "\uc54c\ub85c\uc5d0\ubca0\ub77c\uc78e\uc999",
+      "\ub179\ucc28\ucd94\ucd9c\ubb3c",
+      "\uc720\uae30\uc790\ucc28(\uc6b0\ube48\uc0b0)"
+    ],
+    "keyword_sentiment": {
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 418,
+        "positive_pct": 83
+      },
+      "\ub048\uc801\uc784\uc5c6\uc74c": {
+        "mentioned_count": 475,
+        "positive_pct": 68
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 1140,
+        "positive_pct": 68
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 672,
+        "positive_pct": 68
+      }
+    }
+  },
+  {
+    "id": "SUN016",
+    "name": "\uc544\ub137\uc0ac \uc6cc\ud130\ub9ac \uc120\ud06c\ub9bc",
+    "brand": "\uc544\ub137\uc0ac",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\uc6cc\ud130\ub9ac \uc120\ud06c\ub9bc",
+    "price_krw": 21500,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 681,
+    "avg_rating": 4.9,
+    "key_ingredients": [
+      "\uc720\uae30\uc790\ucc28(\uc625\ud1a0\ud06c\ub9b4\ub80c)",
+      "\uc2dc\uce74(\ub9c8\ub370\uce74\uc18c\uc0ac\uc774\ub4dc)",
+      "\ub179\ucc28\ucd94\ucd9c\ubb3c"
+    ],
+    "keyword_sentiment": {
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 175,
+        "positive_pct": 80
+      },
+      "\ubc31\ud0c1\uc5c6\uc74c": {
+        "mentioned_count": 178,
+        "positive_pct": 67
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 188,
+        "positive_pct": 70
+      },
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 137,
+        "positive_pct": 98
+      }
+    }
+  },
+  {
+    "id": "SUN017",
+    "name": "\uc774\ub2c8\uc2a4\ud504\ub9ac \uc57d\uc0b0\uc131 \uc120\ud06c\ub9bc 2.0",
+    "brand": "\uc774\ub2c8\uc2a4\ud504\ub9ac",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\uc57d\uc0b0\uc131 \uc120\ud06c\ub9bc",
+    "price_krw": 45000,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 2577,
+    "avg_rating": 4.9,
+    "key_ingredients": [
+      "\ubb34\uae30\uc790\ucc28(\uc9d5\ud06c\uc625\uc0ac\uc774\ub4dc)",
+      "\uc720\uae30\uc790\ucc28(\uc625\ud1a0\ud06c\ub9b4\ub80c)",
+      "\uc2dc\uce74(\ub9c8\ub370\uce74\uc18c\uc0ac\uc774\ub4dc)"
+    ],
+    "keyword_sentiment": {
+      "\ucfe8\ub9c1\uac10": {
+        "mentioned_count": 499,
+        "positive_pct": 71
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 105,
+        "positive_pct": 78
+      },
+      "\ub048\uc801\uc784\uc5c6\uc74c": {
+        "mentioned_count": 548,
+        "positive_pct": 81
+      }
+    }
+  },
+  {
+    "id": "SUN018",
+    "name": "\uc774\ub2c8\uc2a4\ud504\ub9ac \ucfe8\ub9c1 \uc120\ud06c\ub9bc \ud50c\ub7ec\uc2a4",
+    "brand": "\uc774\ub2c8\uc2a4\ud504\ub9ac",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\ucfe8\ub9c1 \uc120\ud06c\ub9bc",
+    "price_krw": 39800,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 5883,
+    "avg_rating": 4.1,
+    "key_ingredients": [
+      "\ubb34\uae30\uc790\ucc28(\uc9d5\ud06c\uc625\uc0ac\uc774\ub4dc)",
+      "\uc54c\ub85c\uc5d0\ubca0\ub77c\uc78e\uc999",
+      "\uc720\uae30\uc790\ucc28(\uc6b0\ube48\uc0b0)"
+    ],
+    "keyword_sentiment": {
+      "\ub048\uc801\uc784\uc5c6\uc74c": {
+        "mentioned_count": 1397,
+        "positive_pct": 84
+      },
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 1938,
+        "positive_pct": 71
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 1952,
+        "positive_pct": 73
+      }
+    }
+  },
+  {
+    "id": "SUN019",
+    "name": "\uc774\ub2c8\uc2a4\ud504\ub9ac \ubb34\uae30\uc790\ucc28 \uc120\ud06c\ub9bc",
+    "brand": "\uc774\ub2c8\uc2a4\ud504\ub9ac",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\ubb34\uae30\uc790\ucc28 \uc120\ud06c\ub9bc",
+    "price_krw": 22700,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 5998,
+    "avg_rating": 4.0,
+    "key_ingredients": [
+      "\uc720\uae30\uc790\ucc28(\uc6b0\ube48\uc0b0)",
+      "\uc800\ubc31\ud0c1 \ucf54\ud305 \ud30c\uc6b0\ub354",
+      "\ub179\ucc28\ucd94\ucd9c\ubb3c"
+    ],
+    "keyword_sentiment": {
+      "\ubc31\ud0c1\uc5c6\uc74c": {
+        "mentioned_count": 544,
+        "positive_pct": 68
+      },
+      "\ucfe8\ub9c1\uac10": {
+        "mentioned_count": 219,
+        "positive_pct": 92
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 1728,
+        "positive_pct": 82
+      }
+    }
+  },
+  {
+    "id": "SUN020",
+    "name": "\ubbf8\uc0e4 \uc57d\uc0b0\uc131 \uc120\ud06c\ub9bc",
+    "brand": "\ubbf8\uc0e4",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\uc57d\uc0b0\uc131 \uc120\ud06c\ub9bc",
+    "price_krw": 33800,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 4714,
+    "avg_rating": 4.6,
+    "key_ingredients": [
+      "\uc720\uae30\uc790\ucc28(\uc6b0\ube48\uc0b0)",
+      "\ud310\ud14c\ub180",
+      "\ub179\ucc28\ucd94\ucd9c\ubb3c"
+    ],
+    "keyword_sentiment": {
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 1445,
+        "positive_pct": 74
+      },
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 1147,
+        "positive_pct": 67
+      }
+    }
+  },
+  {
+    "id": "SUN021",
+    "name": "\uc544\ub137\uc0ac \ubb34\uae30\uc790\ucc28 \uc120\ud06c\ub9bc PRO",
+    "brand": "\uc544\ub137\uc0ac",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\ubb34\uae30\uc790\ucc28 \uc120\ud06c\ub9bc",
+    "price_krw": 14000,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 7483,
+    "avg_rating": 4.0,
+    "key_ingredients": [
+      "\uc2dc\uce74(\ub9c8\ub370\uce74\uc18c\uc0ac\uc774\ub4dc)",
+      "\ud310\ud14c\ub180",
+      "\uc720\uae30\uc790\ucc28(\uc625\ud1a0\ud06c\ub9b4\ub80c)"
+    ],
+    "keyword_sentiment": {
+      "\ubc31\ud0c1\uc5c6\uc74c": {
+        "mentioned_count": 1478,
+        "positive_pct": 91
+      },
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 663,
+        "positive_pct": 80
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 695,
+        "positive_pct": 76
+      }
+    }
+  },
+  {
+    "id": "SUN022",
+    "name": "\uc774\ub2c8\uc2a4\ud504\ub9ac \ucfe8\ub9c1 \uc120\ud06c\ub9bc",
+    "brand": "\uc774\ub2c8\uc2a4\ud504\ub9ac",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\ucfe8\ub9c1 \uc120\ud06c\ub9bc",
+    "price_krw": 31500,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 7264,
+    "avg_rating": 4.2,
+    "key_ingredients": [
+      "\uc720\uae30\uc790\ucc28(\uc625\ud1a0\ud06c\ub9b4\ub80c)",
+      "\ud310\ud14c\ub180",
+      "\uc2dc\uce74(\ub9c8\ub370\uce74\uc18c\uc0ac\uc774\ub4dc)"
+    ],
+    "keyword_sentiment": {
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 847,
+        "positive_pct": 94
+      },
+      "\ubc31\ud0c1\uc5c6\uc74c": {
+        "mentioned_count": 1462,
+        "positive_pct": 84
+      }
+    }
+  },
+  {
+    "id": "SUN023",
+    "name": "\uc774\ub2c8\uc2a4\ud504\ub9ac \uc120\ucfe0\uc158",
+    "brand": "\uc774\ub2c8\uc2a4\ud504\ub9ac",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\uc120\ucfe0\uc158",
+    "price_krw": 26200,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 2996,
+    "avg_rating": 4.7,
+    "key_ingredients": [
+      "\uc2dc\uce74(\ub9c8\ub370\uce74\uc18c\uc0ac\uc774\ub4dc)",
+      "\ud310\ud14c\ub180",
+      "\ubb34\uae30\uc790\ucc28(\uc9d5\ud06c\uc625\uc0ac\uc774\ub4dc)"
+    ],
+    "keyword_sentiment": {
+      "\ub048\uc801\uc784\uc5c6\uc74c": {
+        "mentioned_count": 148,
+        "positive_pct": 81
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 212,
+        "positive_pct": 81
+      },
+      "\ucfe8\ub9c1\uac10": {
+        "mentioned_count": 69,
+        "positive_pct": 71
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 640,
+        "positive_pct": 92
+      }
+    }
+  },
+  {
+    "id": "SUN024",
+    "name": "\uba54\ub514\ud790 \uc6cc\ud130\ub9ac \uc120\ud06c\ub9bc 2.0",
+    "brand": "\uba54\ub514\ud790",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\uc6cc\ud130\ub9ac \uc120\ud06c\ub9bc",
+    "price_krw": 25000,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 483,
+    "avg_rating": 4.3,
+    "key_ingredients": [
+      "\uc800\ubc31\ud0c1 \ucf54\ud305 \ud30c\uc6b0\ub354",
+      "\uc54c\ub85c\uc5d0\ubca0\ub77c\uc78e\uc999",
+      "\uc720\uae30\uc790\ucc28(\uc6b0\ube48\uc0b0)"
+    ],
+    "keyword_sentiment": {
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 140,
+        "positive_pct": 69
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 114,
+        "positive_pct": 85
+      },
+      "\ubc31\ud0c1\uc5c6\uc74c": {
+        "mentioned_count": 61,
+        "positive_pct": 84
+      },
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 159,
+        "positive_pct": 84
+      }
+    }
+  },
+  {
+    "id": "SUN025",
+    "name": "\uad6c\ub2ec \uc57d\uc0b0\uc131 \uc120\ud06c\ub9bc \ud50c\ub7ec\uc2a4",
+    "brand": "\uad6c\ub2ec",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\uc57d\uc0b0\uc131 \uc120\ud06c\ub9bc",
+    "price_krw": 20900,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 5162,
+    "avg_rating": 4.8,
+    "key_ingredients": [
+      "\uc720\uae30\uc790\ucc28(\uc6b0\ube48\uc0b0)",
+      "\ubb34\uae30\uc790\ucc28(\uc9d5\ud06c\uc625\uc0ac\uc774\ub4dc)",
+      "\uc800\ubc31\ud0c1 \ucf54\ud305 \ud30c\uc6b0\ub354"
+    ],
+    "keyword_sentiment": {
+      "\ucfe8\ub9c1\uac10": {
+        "mentioned_count": 617,
+        "positive_pct": 78
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 910,
+        "positive_pct": 85
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 982,
+        "positive_pct": 93
+      },
+      "\ubc31\ud0c1\uc5c6\uc74c": {
+        "mentioned_count": 935,
+        "positive_pct": 78
+      }
+    }
+  },
+  {
+    "id": "SUN026",
+    "name": "\uc13c\uce74 \uc120\uc2a4\ud2f1",
+    "brand": "\uc13c\uce74",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\uc120\uc2a4\ud2f1",
+    "price_krw": 29100,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 885,
+    "avg_rating": 4.2,
+    "key_ingredients": [
+      "\ub098\uc774\uc544\uc2e0\uc544\ub9c8\uc774\ub4dc",
+      "\ubb34\uae30\uc790\ucc28(\uc9d5\ud06c\uc625\uc0ac\uc774\ub4dc)",
+      "\ub179\ucc28\ucd94\ucd9c\ubb3c"
+    ],
+    "keyword_sentiment": {
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 145,
+        "positive_pct": 77
+      },
+      "\ucfe8\ub9c1\uac10": {
+        "mentioned_count": 105,
+        "positive_pct": 66
+      }
+    }
+  },
+  {
+    "id": "SUN027",
+    "name": "\uba54\ub514\ud790 \uc120\uc2a4\ud2f1",
+    "brand": "\uba54\ub514\ud790",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\uc120\uc2a4\ud2f1",
+    "price_krw": 21900,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 6004,
+    "avg_rating": 4.1,
+    "key_ingredients": [
+      "\uc720\uae30\uc790\ucc28(\uc625\ud1a0\ud06c\ub9b4\ub80c)",
+      "\ubb34\uae30\uc790\ucc28(\uc9d5\ud06c\uc625\uc0ac\uc774\ub4dc)",
+      "\ub098\uc774\uc544\uc2e0\uc544\ub9c8\uc774\ub4dc"
+    ],
+    "keyword_sentiment": {
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 332,
+        "positive_pct": 65
+      },
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 1858,
+        "positive_pct": 71
+      },
+      "\ub048\uc801\uc784\uc5c6\uc74c": {
+        "mentioned_count": 1624,
+        "positive_pct": 92
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 478,
+        "positive_pct": 76
+      }
+    }
+  },
+  {
+    "id": "SUN028",
+    "name": "\ub77c\uc6b4\ub4dc\ub7a9 \uc120\ucfe0\uc158 \ud50c\ub7ec\uc2a4",
+    "brand": "\ub77c\uc6b4\ub4dc\ub7a9",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\uc120\ucfe0\uc158",
+    "price_krw": 39100,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 4698,
+    "avg_rating": 4.6,
+    "key_ingredients": [
+      "\uc800\ubc31\ud0c1 \ucf54\ud305 \ud30c\uc6b0\ub354",
+      "\ub098\uc774\uc544\uc2e0\uc544\ub9c8\uc774\ub4dc",
+      "\ubb34\uae30\uc790\ucc28(\uc9d5\ud06c\uc625\uc0ac\uc774\ub4dc)"
+    ],
+    "keyword_sentiment": {
+      "\ucfe8\ub9c1\uac10": {
+        "mentioned_count": 943,
+        "positive_pct": 75
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 1553,
+        "positive_pct": 95
+      },
+      "\ub048\uc801\uc784\uc5c6\uc74c": {
+        "mentioned_count": 951,
+        "positive_pct": 81
+      },
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 536,
+        "positive_pct": 82
+      }
+    }
+  },
+  {
+    "id": "SUN029",
+    "name": "\ubbf8\uc0e4 \ubb34\uae30\uc790\ucc28 \uc120\ud06c\ub9bc 2.0",
+    "brand": "\ubbf8\uc0e4",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\ubb34\uae30\uc790\ucc28 \uc120\ud06c\ub9bc",
+    "price_krw": 25900,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 2871,
+    "avg_rating": 4.4,
+    "key_ingredients": [
+      "\uc2dc\uce74(\ub9c8\ub370\uce74\uc18c\uc0ac\uc774\ub4dc)",
+      "\uc54c\ub85c\uc5d0\ubca0\ub77c\uc78e\uc999",
+      "\ub098\uc774\uc544\uc2e0\uc544\ub9c8\uc774\ub4dc"
+    ],
+    "keyword_sentiment": {
+      "\ub048\uc801\uc784\uc5c6\uc74c": {
+        "mentioned_count": 184,
+        "positive_pct": 79
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 422,
+        "positive_pct": 74
+      },
+      "\ubc31\ud0c1\uc5c6\uc74c": {
+        "mentioned_count": 753,
+        "positive_pct": 78
+      }
+    }
+  },
+  {
+    "id": "SUN030",
+    "name": "\uba54\ub514\ud790 \ud1a4\uc5c5 \uc120\ud06c\ub9bc 2.0",
+    "brand": "\uba54\ub514\ud790",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\ud1a4\uc5c5 \uc120\ud06c\ub9bc",
+    "price_krw": 33500,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 3310,
+    "avg_rating": 4.4,
+    "key_ingredients": [
+      "\ubb34\uae30\uc790\ucc28(\ud2f0\ud0c0\ub284\ub514\uc625\uc0ac\uc774\ub4dc)",
+      "\ud310\ud14c\ub180",
+      "\uc2dc\uce74(\ub9c8\ub370\uce74\uc18c\uc0ac\uc774\ub4dc)"
+    ],
+    "keyword_sentiment": {
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 42,
+        "positive_pct": 87
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 641,
+        "positive_pct": 89
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 888,
+        "positive_pct": 79
+      },
+      "\ubc31\ud0c1\uc5c6\uc74c": {
+        "mentioned_count": 1029,
+        "positive_pct": 79
+      }
+    }
+  },
+  {
+    "id": "SUN031",
+    "name": "\uc124\ud654\uc218 \uc120\uc2a4\ud2f1 \ud50c\ub7ec\uc2a4",
+    "brand": "\uc124\ud654\uc218",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\uc120\uc2a4\ud2f1",
+    "price_krw": 20400,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 7005,
+    "avg_rating": 4.1,
+    "key_ingredients": [
+      "\ud310\ud14c\ub180",
+      "\uc2dc\uce74(\ub9c8\ub370\uce74\uc18c\uc0ac\uc774\ub4dc)",
+      "\uc720\uae30\uc790\ucc28(\uc625\ud1a0\ud06c\ub9b4\ub80c)"
+    ],
+    "keyword_sentiment": {
+      "\ubc31\ud0c1\uc5c6\uc74c": {
+        "mentioned_count": 1643,
+        "positive_pct": 66
+      },
+      "\ub048\uc801\uc784\uc5c6\uc74c": {
+        "mentioned_count": 373,
+        "positive_pct": 92
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 585,
+        "positive_pct": 94
+      }
+    }
+  },
+  {
+    "id": "SUN032",
+    "name": "\ud1a0\ub9ac\ub4e0 \ubb34\uae30\uc790\ucc28 \uc120\ud06c\ub9bc PRO",
+    "brand": "\ud1a0\ub9ac\ub4e0",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\ubb34\uae30\uc790\ucc28 \uc120\ud06c\ub9bc",
+    "price_krw": 31400,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 2399,
+    "avg_rating": 4.8,
+    "key_ingredients": [
+      "\uc720\uae30\uc790\ucc28(\uc625\ud1a0\ud06c\ub9b4\ub80c)",
+      "\ub179\ucc28\ucd94\ucd9c\ubb3c",
+      "\ubb34\uae30\uc790\ucc28(\ud2f0\ud0c0\ub284\ub514\uc625\uc0ac\uc774\ub4dc)"
+    ],
+    "keyword_sentiment": {
+      "\ucfe8\ub9c1\uac10": {
+        "mentioned_count": 49,
+        "positive_pct": 68
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 388,
+        "positive_pct": 79
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 695,
+        "positive_pct": 69
+      }
+    }
+  },
+  {
+    "id": "SUN033",
+    "name": "\uc544\uc774\uc624\ud398 \ucfe8\ub9c1 \uc120\ud06c\ub9bc 2.0",
+    "brand": "\uc544\uc774\uc624\ud398",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\ucfe8\ub9c1 \uc120\ud06c\ub9bc",
+    "price_krw": 18400,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 3999,
+    "avg_rating": 4.6,
+    "key_ingredients": [
+      "\ud310\ud14c\ub180",
+      "\ub179\ucc28\ucd94\ucd9c\ubb3c",
+      "\uc720\uae30\uc790\ucc28(\uc625\ud1a0\ud06c\ub9b4\ub80c)"
+    ],
+    "keyword_sentiment": {
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 554,
+        "positive_pct": 88
+      },
+      "\ub048\uc801\uc784\uc5c6\uc74c": {
+        "mentioned_count": 373,
+        "positive_pct": 72
+      },
+      "\ubc31\ud0c1\uc5c6\uc74c": {
+        "mentioned_count": 365,
+        "positive_pct": 84
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 251,
+        "positive_pct": 66
+      }
+    }
+  },
+  {
+    "id": "SUN034",
+    "name": "\ub2e5\ud130\uc9c0 \uc6cc\ud130\ub9ac \uc120\ud06c\ub9bc 2.0",
+    "brand": "\ub2e5\ud130\uc9c0",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\uc6cc\ud130\ub9ac \uc120\ud06c\ub9bc",
+    "price_krw": 17200,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 5831,
+    "avg_rating": 4.5,
+    "key_ingredients": [
+      "\uc2dc\uce74(\ub9c8\ub370\uce74\uc18c\uc0ac\uc774\ub4dc)",
+      "\ubb34\uae30\uc790\ucc28(\ud2f0\ud0c0\ub284\ub514\uc625\uc0ac\uc774\ub4dc)",
+      "\ud310\ud14c\ub180"
+    ],
+    "keyword_sentiment": {
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 1660,
+        "positive_pct": 67
+      },
+      "\ub048\uc801\uc784\uc5c6\uc74c": {
+        "mentioned_count": 741,
+        "positive_pct": 92
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 1384,
+        "positive_pct": 88
+      }
+    }
+  },
+  {
+    "id": "SUN035",
+    "name": "\ub2ec\ubc14 \uc57d\uc0b0\uc131 \uc120\ud06c\ub9bc",
+    "brand": "\ub2ec\ubc14",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\uc57d\uc0b0\uc131 \uc120\ud06c\ub9bc",
+    "price_krw": 34100,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 7990,
+    "avg_rating": 4.4,
+    "key_ingredients": [
+      "\ub179\ucc28\ucd94\ucd9c\ubb3c",
+      "\uc800\ubc31\ud0c1 \ucf54\ud305 \ud30c\uc6b0\ub354",
+      "\uc2dc\uce74(\ub9c8\ub370\uce74\uc18c\uc0ac\uc774\ub4dc)"
+    ],
+    "keyword_sentiment": {
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 1813,
+        "positive_pct": 76
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 2167,
+        "positive_pct": 82
+      },
+      "\ubc31\ud0c1\uc5c6\uc74c": {
+        "mentioned_count": 2552,
+        "positive_pct": 95
+      }
+    }
+  },
+  {
+    "id": "SUN036",
+    "name": "\ub2ec\ubc14 \ucfe8\ub9c1 \uc120\ud06c\ub9bc",
+    "brand": "\ub2ec\ubc14",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\ucfe8\ub9c1 \uc120\ud06c\ub9bc",
+    "price_krw": 26200,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 7342,
+    "avg_rating": 4.4,
+    "key_ingredients": [
+      "\uc800\ubc31\ud0c1 \ucf54\ud305 \ud30c\uc6b0\ub354",
+      "\uc2dc\uce74(\ub9c8\ub370\uce74\uc18c\uc0ac\uc774\ub4dc)",
+      "\ub179\ucc28\ucd94\ucd9c\ubb3c"
+    ],
+    "keyword_sentiment": {
+      "\ubc31\ud0c1\uc5c6\uc74c": {
+        "mentioned_count": 1407,
+        "positive_pct": 66
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 2054,
+        "positive_pct": 85
+      },
+      "\ub048\uc801\uc784\uc5c6\uc74c": {
+        "mentioned_count": 774,
+        "positive_pct": 96
+      }
+    }
+  },
+  {
+    "id": "SUN037",
+    "name": "\uc6f0\ub77c\uc96c \uc6cc\ud130\ub9ac \uc120\ud06c\ub9bc PRO",
+    "brand": "\uc6f0\ub77c\uc96c",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\uc6cc\ud130\ub9ac \uc120\ud06c\ub9bc",
+    "price_krw": 40400,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 203,
+    "avg_rating": 4.3,
+    "key_ingredients": [
+      "\ud310\ud14c\ub180",
+      "\uc720\uae30\uc790\ucc28(\uc625\ud1a0\ud06c\ub9b4\ub80c)",
+      "\uc800\ubc31\ud0c1 \ucf54\ud305 \ud30c\uc6b0\ub354"
+    ],
+    "keyword_sentiment": {
+      "\ubc31\ud0c1\uc5c6\uc74c": {
+        "mentioned_count": 56,
+        "positive_pct": 96
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 65,
+        "positive_pct": 80
+      },
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 60,
+        "positive_pct": 96
+      },
+      "\ucfe8\ub9c1\uac10": {
+        "mentioned_count": 58,
+        "positive_pct": 66
+      }
+    }
+  },
+  {
+    "id": "SUN038",
+    "name": "\uc124\ud654\uc218 \uc6cc\ud130\ub9ac \uc120\ud06c\ub9bc PRO",
+    "brand": "\uc124\ud654\uc218",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\uc6cc\ud130\ub9ac \uc120\ud06c\ub9bc",
+    "price_krw": 36200,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 4654,
+    "avg_rating": 4.1,
+    "key_ingredients": [
+      "\uc54c\ub85c\uc5d0\ubca0\ub77c\uc78e\uc999",
+      "\uc720\uae30\uc790\ucc28(\uc6b0\ube48\uc0b0)",
+      "\uc720\uae30\uc790\ucc28(\uc625\ud1a0\ud06c\ub9b4\ub80c)"
+    ],
+    "keyword_sentiment": {
+      "\ucfe8\ub9c1\uac10": {
+        "mentioned_count": 1469,
+        "positive_pct": 94
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 584,
+        "positive_pct": 84
+      },
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 544,
+        "positive_pct": 79
+      },
+      "\ubc31\ud0c1\uc5c6\uc74c": {
+        "mentioned_count": 277,
+        "positive_pct": 77
+      }
+    }
+  },
+  {
+    "id": "SUN039",
+    "name": "\uad6c\ub2ec \uc120\uc2a4\ud2f1 \ud50c\ub7ec\uc2a4",
+    "brand": "\uad6c\ub2ec",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\uc120\uc2a4\ud2f1",
+    "price_krw": 26100,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 6055,
+    "avg_rating": 4.3,
+    "key_ingredients": [
+      "\ubb34\uae30\uc790\ucc28(\ud2f0\ud0c0\ub284\ub514\uc625\uc0ac\uc774\ub4dc)",
+      "\uc54c\ub85c\uc5d0\ubca0\ub77c\uc78e\uc999",
+      "\uc800\ubc31\ud0c1 \ucf54\ud305 \ud30c\uc6b0\ub354"
+    ],
+    "keyword_sentiment": {
+      "\ub048\uc801\uc784\uc5c6\uc74c": {
+        "mentioned_count": 1735,
+        "positive_pct": 77
+      },
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 636,
+        "positive_pct": 79
+      },
+      "\ucfe8\ub9c1\uac10": {
+        "mentioned_count": 769,
+        "positive_pct": 76
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 649,
+        "positive_pct": 65
+      }
+    }
+  },
+  {
+    "id": "SUN040",
+    "name": "\ubbf8\uc0e4 \ucfe8\ub9c1 \uc120\ud06c\ub9bc \ud50c\ub7ec\uc2a4",
+    "brand": "\ubbf8\uc0e4",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\ucfe8\ub9c1 \uc120\ud06c\ub9bc",
+    "price_krw": 17200,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 7269,
+    "avg_rating": 5.0,
+    "key_ingredients": [
+      "\uc800\ubc31\ud0c1 \ucf54\ud305 \ud30c\uc6b0\ub354",
+      "\ub098\uc774\uc544\uc2e0\uc544\ub9c8\uc774\ub4dc",
+      "\ubb34\uae30\uc790\ucc28(\uc9d5\ud06c\uc625\uc0ac\uc774\ub4dc)"
+    ],
+    "keyword_sentiment": {
+      "\ub048\uc801\uc784\uc5c6\uc74c": {
+        "mentioned_count": 1952,
+        "positive_pct": 95
+      },
+      "\ucfe8\ub9c1\uac10": {
+        "mentioned_count": 1834,
+        "positive_pct": 86
+      }
+    }
+  },
+  {
+    "id": "SUN041",
+    "name": "\ub2ec\ubc14 \ud1a4\uc5c5 \uc120\ud06c\ub9bc \ud50c\ub7ec\uc2a4",
+    "brand": "\ub2ec\ubc14",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\ud1a4\uc5c5 \uc120\ud06c\ub9bc",
+    "price_krw": 37100,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 726,
+    "avg_rating": 4.5,
+    "key_ingredients": [
+      "\ub098\uc774\uc544\uc2e0\uc544\ub9c8\uc774\ub4dc",
+      "\uc800\ubc31\ud0c1 \ucf54\ud305 \ud30c\uc6b0\ub354",
+      "\ud310\ud14c\ub180"
+    ],
+    "keyword_sentiment": {
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 237,
+        "positive_pct": 84
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 51,
+        "positive_pct": 80
+      },
+      "\ubc31\ud0c1\uc5c6\uc74c": {
+        "mentioned_count": 60,
+        "positive_pct": 91
+      },
+      "\ub048\uc801\uc784\uc5c6\uc74c": {
+        "mentioned_count": 185,
+        "positive_pct": 79
+      }
+    }
+  },
+  {
+    "id": "SUN042",
+    "name": "\uc774\ub2c8\uc2a4\ud504\ub9ac \uc6cc\ud130\ub9ac \uc120\ud06c\ub9bc",
+    "brand": "\uc774\ub2c8\uc2a4\ud504\ub9ac",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\uc6cc\ud130\ub9ac \uc120\ud06c\ub9bc",
+    "price_krw": 15000,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 5114,
+    "avg_rating": 4.5,
+    "key_ingredients": [
+      "\ub179\ucc28\ucd94\ucd9c\ubb3c",
+      "\ub098\uc774\uc544\uc2e0\uc544\ub9c8\uc774\ub4dc",
+      "\uc800\ubc31\ud0c1 \ucf54\ud305 \ud30c\uc6b0\ub354"
+    ],
+    "keyword_sentiment": {
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 1382,
+        "positive_pct": 70
+      },
+      "\ubc31\ud0c1\uc5c6\uc74c": {
+        "mentioned_count": 351,
+        "positive_pct": 80
+      },
+      "\ub048\uc801\uc784\uc5c6\uc74c": {
+        "mentioned_count": 385,
+        "positive_pct": 69
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 350,
+        "positive_pct": 65
+      }
+    }
+  },
+  {
+    "id": "SUN043",
+    "name": "\uc544\ub137\uc0ac \ucfe8\ub9c1 \uc120\ud06c\ub9bc PRO",
+    "brand": "\uc544\ub137\uc0ac",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\ucfe8\ub9c1 \uc120\ud06c\ub9bc",
+    "price_krw": 26400,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 5878,
+    "avg_rating": 4.9,
+    "key_ingredients": [
+      "\uc720\uae30\uc790\ucc28(\uc6b0\ube48\uc0b0)",
+      "\ubb34\uae30\uc790\ucc28(\uc9d5\ud06c\uc625\uc0ac\uc774\ub4dc)",
+      "\ubb34\uae30\uc790\ucc28(\ud2f0\ud0c0\ub284\ub514\uc625\uc0ac\uc774\ub4dc)"
+    ],
+    "keyword_sentiment": {
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 1643,
+        "positive_pct": 77
+      },
+      "\ubc31\ud0c1\uc5c6\uc74c": {
+        "mentioned_count": 900,
+        "positive_pct": 72
+      },
+      "\ucfe8\ub9c1\uac10": {
+        "mentioned_count": 1145,
+        "positive_pct": 79
+      }
+    }
+  },
+  {
+    "id": "SUN044",
+    "name": "\ub77c\uc6b4\ub4dc\ub7a9 \uc120\ucfe0\uc158 PRO",
+    "brand": "\ub77c\uc6b4\ub4dc\ub7a9",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\uc120\ucfe0\uc158",
+    "price_krw": 42400,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 6255,
+    "avg_rating": 4.7,
+    "key_ingredients": [
+      "\ub179\ucc28\ucd94\ucd9c\ubb3c",
+      "\uc800\ubc31\ud0c1 \ucf54\ud305 \ud30c\uc6b0\ub354",
+      "\ubb34\uae30\uc790\ucc28(\ud2f0\ud0c0\ub284\ub514\uc625\uc0ac\uc774\ub4dc)"
+    ],
+    "keyword_sentiment": {
+      "\ucfe8\ub9c1\uac10": {
+        "mentioned_count": 1275,
+        "positive_pct": 90
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 1145,
+        "positive_pct": 97
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 2052,
+        "positive_pct": 93
+      },
+      "\ubc31\ud0c1\uc5c6\uc74c": {
+        "mentioned_count": 359,
+        "positive_pct": 67
+      }
+    }
+  },
+  {
+    "id": "SUN045",
+    "name": "\ub2e5\ud130\uc9c0 \ucfe8\ub9c1 \uc120\ud06c\ub9bc",
+    "brand": "\ub2e5\ud130\uc9c0",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\ucfe8\ub9c1 \uc120\ud06c\ub9bc",
+    "price_krw": 42000,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 7908,
+    "avg_rating": 4.9,
+    "key_ingredients": [
+      "\uc720\uae30\uc790\ucc28(\uc6b0\ube48\uc0b0)",
+      "\ud310\ud14c\ub180",
+      "\ub098\uc774\uc544\uc2e0\uc544\ub9c8\uc774\ub4dc"
+    ],
+    "keyword_sentiment": {
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 2390,
+        "positive_pct": 67
+      },
+      "\ucfe8\ub9c1\uac10": {
+        "mentioned_count": 747,
+        "positive_pct": 95
+      }
+    }
+  },
+  {
+    "id": "SUN046",
+    "name": "\ub2e5\ud130\uc9c0 \uc57d\uc0b0\uc131 \uc120\ud06c\ub9bc PRO",
+    "brand": "\ub2e5\ud130\uc9c0",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\uc57d\uc0b0\uc131 \uc120\ud06c\ub9bc",
+    "price_krw": 32900,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 2850,
+    "avg_rating": 4.5,
+    "key_ingredients": [
+      "\uc2dc\uce74(\ub9c8\ub370\uce74\uc18c\uc0ac\uc774\ub4dc)",
+      "\uc800\ubc31\ud0c1 \ucf54\ud305 \ud30c\uc6b0\ub354",
+      "\ub179\ucc28\ucd94\ucd9c\ubb3c"
+    ],
+    "keyword_sentiment": {
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 367,
+        "positive_pct": 91
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 740,
+        "positive_pct": 96
+      },
+      "\ubc31\ud0c1\uc5c6\uc74c": {
+        "mentioned_count": 325,
+        "positive_pct": 90
+      }
+    }
+  },
+  {
+    "id": "SUN047",
+    "name": "\ub2e5\ud130\uc9c0 \uc120\ucfe0\uc158 \ud50c\ub7ec\uc2a4",
+    "brand": "\ub2e5\ud130\uc9c0",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\uc120\ucfe0\uc158",
+    "price_krw": 38300,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 6877,
+    "avg_rating": 4.6,
+    "key_ingredients": [
+      "\ub098\uc774\uc544\uc2e0\uc544\ub9c8\uc774\ub4dc",
+      "\ub179\ucc28\ucd94\ucd9c\ubb3c",
+      "\ubb34\uae30\uc790\ucc28(\ud2f0\ud0c0\ub284\ub514\uc625\uc0ac\uc774\ub4dc)"
+    ],
+    "keyword_sentiment": {
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 1922,
+        "positive_pct": 91
+      },
+      "\ub048\uc801\uc784\uc5c6\uc74c": {
+        "mentioned_count": 252,
+        "positive_pct": 77
+      }
+    }
+  },
+  {
+    "id": "SUN048",
+    "name": "\uad6c\ub2ec \ubb34\uae30\uc790\ucc28 \uc120\ud06c\ub9bc",
+    "brand": "\uad6c\ub2ec",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\ubb34\uae30\uc790\ucc28 \uc120\ud06c\ub9bc",
+    "price_krw": 18700,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 7719,
+    "avg_rating": 4.1,
+    "key_ingredients": [
+      "\ubb34\uae30\uc790\ucc28(\uc9d5\ud06c\uc625\uc0ac\uc774\ub4dc)",
+      "\ub098\uc774\uc544\uc2e0\uc544\ub9c8\uc774\ub4dc",
+      "\ub179\ucc28\ucd94\ucd9c\ubb3c"
+    ],
+    "keyword_sentiment": {
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 148,
+        "positive_pct": 80
+      },
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 678,
+        "positive_pct": 84
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 2286,
+        "positive_pct": 65
+      }
+    }
+  },
+  {
+    "id": "SUN049",
+    "name": "\uc124\ud654\uc218 \uc120\ucfe0\uc158 2.0",
+    "brand": "\uc124\ud654\uc218",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\uc120\ucfe0\uc158",
+    "price_krw": 37500,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 7760,
+    "avg_rating": 4.9,
+    "key_ingredients": [
+      "\uc800\ubc31\ud0c1 \ucf54\ud305 \ud30c\uc6b0\ub354",
+      "\ud310\ud14c\ub180",
+      "\uc2dc\uce74(\ub9c8\ub370\uce74\uc18c\uc0ac\uc774\ub4dc)"
+    ],
+    "keyword_sentiment": {
+      "\ucfe8\ub9c1\uac10": {
+        "mentioned_count": 2006,
+        "positive_pct": 95
+      },
+      "\ub048\uc801\uc784\uc5c6\uc74c": {
+        "mentioned_count": 1028,
+        "positive_pct": 94
+      },
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 2287,
+        "positive_pct": 74
+      },
+      "\ubc31\ud0c1\uc5c6\uc74c": {
+        "mentioned_count": 1601,
+        "positive_pct": 77
+      }
+    }
+  },
+  {
+    "id": "SUN050",
+    "name": "\uc6f0\ub77c\uc96c \uc120\ucfe0\uc158",
+    "brand": "\uc6f0\ub77c\uc96c",
+    "category": "\uc120\ud06c\ub9bc",
+    "subtype": "\uc120\ucfe0\uc158",
+    "price_krw": 25600,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 6841,
+    "avg_rating": 4.3,
+    "key_ingredients": [
+      "\uc54c\ub85c\uc5d0\ubca0\ub77c\uc78e\uc999",
+      "\ud310\ud14c\ub180",
+      "\ub098\uc774\uc544\uc2e0\uc544\ub9c8\uc774\ub4dc"
+    ],
+    "keyword_sentiment": {
+      "\ucfe8\ub9c1\uac10": {
+        "mentioned_count": 2035,
+        "positive_pct": 74
+      },
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 1859,
+        "positive_pct": 95
+      }
+    }
+  },
+  {
+    "id": "SKIN001",
+    "name": "\ucf54\uc2a4\uc54c\uc5d1\uc2a4 \uc138\ub77c\ub9c8\uc774\ub4dc \ud06c\ub9bc 2.0",
+    "brand": "\ucf54\uc2a4\uc54c\uc5d1\uc2a4",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\uc138\ub77c\ub9c8\uc774\ub4dc \ud06c\ub9bc",
+    "price_krw": 39400,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 4804,
+    "avg_rating": 5.0,
+    "key_ingredients": [
+      "\uc5b4\uc131\ucd08\ucd94\ucd9c\ubb3c",
+      "\ud3a9\ud0c0\uc774\ub4dc",
+      "\ucf5c\ub77c\uac90"
+    ],
+    "keyword_sentiment": {
+      "\ud761\uc218\ub825": {
+        "mentioned_count": 681,
+        "positive_pct": 95
+      },
+      "\ud0c4\ub825": {
+        "mentioned_count": 1474,
+        "positive_pct": 89
+      },
+      "\uc218\ubd84\uac10": {
+        "mentioned_count": 820,
+        "positive_pct": 74
+      }
+    }
+  },
+  {
+    "id": "SKIN002",
+    "name": "\uc774\ub2c8\uc2a4\ud504\ub9ac \uc800\ubd84\uc790 \ud788\uc54c\ub8e8\ub860\uc0b0 \uc138\ub7fc \ud50c\ub7ec\uc2a4",
+    "brand": "\uc774\ub2c8\uc2a4\ud504\ub9ac",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\uc800\ubd84\uc790 \ud788\uc54c\ub8e8\ub860\uc0b0 \uc138\ub7fc",
+    "price_krw": 25200,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 4428,
+    "avg_rating": 4.6,
+    "key_ingredients": [
+      "\ud2f0\ud2b8\ub9ac\ucd94\ucd9c\ubb3c",
+      "\ub098\uc774\uc544\uc2e0\uc544\ub9c8\uc774\ub4dc",
+      "\ubca0\ud0c0\uae00\ub8e8\uce78"
+    ],
+    "keyword_sentiment": {
+      "\uc218\ubd84\uac10": {
+        "mentioned_count": 1370,
+        "positive_pct": 74
+      },
+      "\ud761\uc218\ub825": {
+        "mentioned_count": 183,
+        "positive_pct": 95
+      },
+      "\ud0c4\ub825": {
+        "mentioned_count": 572,
+        "positive_pct": 86
+      }
+    }
+  },
+  {
+    "id": "SKIN003",
+    "name": "\uba54\ub514\ud790 \uc57d\uc0b0\uc131 \ud1a0\ub108 \ud50c\ub7ec\uc2a4",
+    "brand": "\uba54\ub514\ud790",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\uc57d\uc0b0\uc131 \ud1a0\ub108",
+    "price_krw": 47400,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 5254,
+    "avg_rating": 4.4,
+    "key_ingredients": [
+      "\ub9c8\ub370\uce74\uc18c\uc0ac\uc774\ub4dc",
+      "\ud310\ud14c\ub180",
+      "PDRN(\uc5f0\uc5b4DNA)"
+    ],
+    "keyword_sentiment": {
+      "\ud0c4\ub825": {
+        "mentioned_count": 170,
+        "positive_pct": 80
+      },
+      "\uc9c4\uc815\ud6a8\uacfc": {
+        "mentioned_count": 1322,
+        "positive_pct": 83
+      },
+      "\uc218\ubd84\uac10": {
+        "mentioned_count": 495,
+        "positive_pct": 70
+      },
+      "\uc800\uc790\uadf9": {
+        "mentioned_count": 918,
+        "positive_pct": 71
+      }
+    }
+  },
+  {
+    "id": "SKIN004",
+    "name": "\ud1a0\ub9ac\ub4e0 \uc138\ub77c\ub9c8\uc774\ub4dc \ud06c\ub9bc",
+    "brand": "\ud1a0\ub9ac\ub4e0",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\uc138\ub77c\ub9c8\uc774\ub4dc \ud06c\ub9bc",
+    "price_krw": 45000,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 3056,
+    "avg_rating": 4.6,
+    "key_ingredients": [
+      "\uc138\ub77c\ub9c8\uc774\ub4dc",
+      "\ucf5c\ub77c\uac90",
+      "\ubca0\ud0c0\uae00\ub8e8\uce78"
+    ],
+    "keyword_sentiment": {
+      "\ud0c4\ub825": {
+        "mentioned_count": 573,
+        "positive_pct": 91
+      },
+      "\ud761\uc218\ub825": {
+        "mentioned_count": 609,
+        "positive_pct": 76
+      },
+      "\uc9c4\uc815\ud6a8\uacfc": {
+        "mentioned_count": 204,
+        "positive_pct": 76
+      }
+    }
+  },
+  {
+    "id": "SKIN005",
+    "name": "\uad6c\ub2ec \ucf5c\ub77c\uac90 \uc570\ud50c",
+    "brand": "\uad6c\ub2ec",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\ucf5c\ub77c\uac90 \uc570\ud50c",
+    "price_krw": 29600,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 2022,
+    "avg_rating": 4.4,
+    "key_ingredients": [
+      "\ub098\uc774\uc544\uc2e0\uc544\ub9c8\uc774\ub4dc",
+      "\ucf5c\ub77c\uac90",
+      "\ud310\ud14c\ub180"
+    ],
+    "keyword_sentiment": {
+      "\ucd09\ucd09\ud568": {
+        "mentioned_count": 291,
+        "positive_pct": 65
+      },
+      "\uc800\uc790\uadf9": {
+        "mentioned_count": 506,
+        "positive_pct": 83
+      },
+      "\ud0c4\ub825": {
+        "mentioned_count": 589,
+        "positive_pct": 75
+      }
+    }
+  },
+  {
+    "id": "SKIN006",
+    "name": "\uc5d0\uc2a4\ud2b8\ub77c \ube44\ud0c0\ubbfcC \uc138\ub7fc PRO",
+    "brand": "\uc5d0\uc2a4\ud2b8\ub77c",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\ube44\ud0c0\ubbfcC \uc138\ub7fc",
+    "price_krw": 61700,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 7044,
+    "avg_rating": 5.0,
+    "key_ingredients": [
+      "\ubca0\ud0c0\uae00\ub8e8\uce78",
+      "\uc138\ub77c\ub9c8\uc774\ub4dc",
+      "\ud310\ud14c\ub180"
+    ],
+    "keyword_sentiment": {
+      "\ud761\uc218\ub825": {
+        "mentioned_count": 466,
+        "positive_pct": 80
+      },
+      "\ud0c4\ub825": {
+        "mentioned_count": 1592,
+        "positive_pct": 87
+      },
+      "\uc9c4\uc815\ud6a8\uacfc": {
+        "mentioned_count": 1241,
+        "positive_pct": 83
+      }
+    }
+  },
+  {
+    "id": "SKIN007",
+    "name": "\ud1a0\ub9ac\ub4e0 \uc218\ubd84 \uc570\ud50c",
+    "brand": "\ud1a0\ub9ac\ub4e0",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\uc218\ubd84 \uc570\ud50c",
+    "price_krw": 65800,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 6942,
+    "avg_rating": 4.8,
+    "key_ingredients": [
+      "PDRN(\uc5f0\uc5b4DNA)",
+      "\ucf5c\ub77c\uac90",
+      "\ub098\uc774\uc544\uc2e0\uc544\ub9c8\uc774\ub4dc"
+    ],
+    "keyword_sentiment": {
+      "\ud761\uc218\ub825": {
+        "mentioned_count": 927,
+        "positive_pct": 77
+      },
+      "\uc9c4\uc815\ud6a8\uacfc": {
+        "mentioned_count": 1056,
+        "positive_pct": 73
+      },
+      "\uc800\uc790\uadf9": {
+        "mentioned_count": 427,
+        "positive_pct": 67
+      }
+    }
+  },
+  {
+    "id": "SKIN008",
+    "name": "\uc77c\ub9ac\uc724 \ud310\ud14c\ub180 \ud06c\ub9bc",
+    "brand": "\uc77c\ub9ac\uc724",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\ud310\ud14c\ub180 \ud06c\ub9bc",
+    "price_krw": 45200,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 2796,
+    "avg_rating": 4.7,
+    "key_ingredients": [
+      "\ub098\uc774\uc544\uc2e0\uc544\ub9c8\uc774\ub4dc",
+      "\ud504\ub85c\ud3f4\ub9ac\uc2a4\ucd94\ucd9c\ubb3c",
+      "\ud788\uc54c\ub8e8\ub860\uc0b0"
+    ],
+    "keyword_sentiment": {
+      "\ud0c4\ub825": {
+        "mentioned_count": 835,
+        "positive_pct": 88
+      },
+      "\ud761\uc218\ub825": {
+        "mentioned_count": 573,
+        "positive_pct": 97
+      },
+      "\uc9c4\uc815\ud6a8\uacfc": {
+        "mentioned_count": 309,
+        "positive_pct": 75
+      },
+      "\uc218\ubd84\uac10": {
+        "mentioned_count": 293,
+        "positive_pct": 95
+      }
+    }
+  },
+  {
+    "id": "SKIN009",
+    "name": "\uc124\ud654\uc218 \uc800\ubd84\uc790 \ud788\uc54c\ub8e8\ub860\uc0b0 \uc138\ub7fc 2.0",
+    "brand": "\uc124\ud654\uc218",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\uc800\ubd84\uc790 \ud788\uc54c\ub8e8\ub860\uc0b0 \uc138\ub7fc",
+    "price_krw": 38100,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 7166,
+    "avg_rating": 4.1,
+    "key_ingredients": [
+      "\uc13c\ud154\ub77c\uc544\uc2dc\uc544\ud2f0\uce74\ucd94\ucd9c\ubb3c",
+      "\uc544\ub370\ub178\uc2e0",
+      "PDRN(\uc5f0\uc5b4DNA)"
+    ],
+    "keyword_sentiment": {
+      "\ucd09\ucd09\ud568": {
+        "mentioned_count": 1646,
+        "positive_pct": 65
+      },
+      "\ud0c4\ub825": {
+        "mentioned_count": 1113,
+        "positive_pct": 72
+      },
+      "\uc800\uc790\uadf9": {
+        "mentioned_count": 1892,
+        "positive_pct": 88
+      },
+      "\uc218\ubd84\uac10": {
+        "mentioned_count": 1103,
+        "positive_pct": 89
+      }
+    }
+  },
+  {
+    "id": "SKIN010",
+    "name": "\ub77c\ub124\uc988 \uc57d\uc0b0\uc131 \ud1a0\ub108 PRO",
+    "brand": "\ub77c\ub124\uc988",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\uc57d\uc0b0\uc131 \ud1a0\ub108",
+    "price_krw": 37600,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 5425,
+    "avg_rating": 4.1,
+    "key_ingredients": [
+      "PDRN(\uc5f0\uc5b4DNA)",
+      "\ud310\ud14c\ub180",
+      "\uc544\ub370\ub178\uc2e0"
+    ],
+    "keyword_sentiment": {
+      "\ucd09\ucd09\ud568": {
+        "mentioned_count": 1465,
+        "positive_pct": 84
+      },
+      "\ud0c4\ub825": {
+        "mentioned_count": 1359,
+        "positive_pct": 91
+      }
+    }
+  },
+  {
+    "id": "SKIN011",
+    "name": "\ub77c\uc6b4\ub4dc\ub7a9 \uc800\ubd84\uc790 \ud788\uc54c\ub8e8\ub860\uc0b0 \uc138\ub7fc 2.0",
+    "brand": "\ub77c\uc6b4\ub4dc\ub7a9",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\uc800\ubd84\uc790 \ud788\uc54c\ub8e8\ub860\uc0b0 \uc138\ub7fc",
+    "price_krw": 28800,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 3303,
+    "avg_rating": 4.7,
+    "key_ingredients": [
+      "\uc13c\ud154\ub77c\uc544\uc2dc\uc544\ud2f0\uce74\ucd94\ucd9c\ubb3c",
+      "\uc544\ub370\ub178\uc2e0",
+      "\ud504\ub85c\ud3f4\ub9ac\uc2a4\ucd94\ucd9c\ubb3c"
+    ],
+    "keyword_sentiment": {
+      "\uc800\uc790\uadf9": {
+        "mentioned_count": 346,
+        "positive_pct": 91
+      },
+      "\uc9c4\uc815\ud6a8\uacfc": {
+        "mentioned_count": 232,
+        "positive_pct": 96
+      },
+      "\ud0c4\ub825": {
+        "mentioned_count": 865,
+        "positive_pct": 82
+      }
+    }
+  },
+  {
+    "id": "SKIN012",
+    "name": "\uad6c\ub2ec \uc138\ub77c\ub9c8\uc774\ub4dc \ud06c\ub9bc",
+    "brand": "\uad6c\ub2ec",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\uc138\ub77c\ub9c8\uc774\ub4dc \ud06c\ub9bc",
+    "price_krw": 52600,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 4580,
+    "avg_rating": 4.8,
+    "key_ingredients": [
+      "\uc13c\ud154\ub77c\uc544\uc2dc\uc544\ud2f0\uce74\ucd94\ucd9c\ubb3c",
+      "\uc5b4\uc131\ucd08\ucd94\ucd9c\ubb3c",
+      "\ucf5c\ub77c\uac90"
+    ],
+    "keyword_sentiment": {
+      "\uc800\uc790\uadf9": {
+        "mentioned_count": 418,
+        "positive_pct": 72
+      },
+      "\uc218\ubd84\uac10": {
+        "mentioned_count": 961,
+        "positive_pct": 70
+      },
+      "\ud0c4\ub825": {
+        "mentioned_count": 1387,
+        "positive_pct": 78
+      },
+      "\ud761\uc218\ub825": {
+        "mentioned_count": 1344,
+        "positive_pct": 66
+      }
+    }
+  },
+  {
+    "id": "SKIN013",
+    "name": "\uad6c\ub2ec \uc800\ubd84\uc790 \ud788\uc54c\ub8e8\ub860\uc0b0 \uc138\ub7fc",
+    "brand": "\uad6c\ub2ec",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\uc800\ubd84\uc790 \ud788\uc54c\ub8e8\ub860\uc0b0 \uc138\ub7fc",
+    "price_krw": 36200,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 4923,
+    "avg_rating": 4.9,
+    "key_ingredients": [
+      "\uc5b4\uc131\ucd08\ucd94\ucd9c\ubb3c",
+      "\ud2f0\ud2b8\ub9ac\ucd94\ucd9c\ubb3c",
+      "\ud3a9\ud0c0\uc774\ub4dc"
+    ],
+    "keyword_sentiment": {
+      "\ud761\uc218\ub825": {
+        "mentioned_count": 1615,
+        "positive_pct": 74
+      },
+      "\uc800\uc790\uadf9": {
+        "mentioned_count": 1250,
+        "positive_pct": 65
+      }
+    }
+  },
+  {
+    "id": "SKIN014",
+    "name": "\ube44\ud50c\ub808\uc778 \ud310\ud14c\ub180 \ud06c\ub9bc",
+    "brand": "\ube44\ud50c\ub808\uc778",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\ud310\ud14c\ub180 \ud06c\ub9bc",
+    "price_krw": 17600,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 1199,
+    "avg_rating": 4.1,
+    "key_ingredients": [
+      "\ub9c8\ub370\uce74\uc18c\uc0ac\uc774\ub4dc",
+      "\uc138\ub77c\ub9c8\uc774\ub4dc",
+      "\ud3a9\ud0c0\uc774\ub4dc"
+    ],
+    "keyword_sentiment": {
+      "\uc800\uc790\uadf9": {
+        "mentioned_count": 331,
+        "positive_pct": 85
+      },
+      "\ud761\uc218\ub825": {
+        "mentioned_count": 38,
+        "positive_pct": 76
+      }
+    }
+  },
+  {
+    "id": "SKIN015",
+    "name": "\ub77c\uc6b4\ub4dc\ub7a9 \uc800\ubd84\uc790 \ud788\uc54c\ub8e8\ub860\uc0b0 \uc138\ub7fc \ud50c\ub7ec\uc2a4",
+    "brand": "\ub77c\uc6b4\ub4dc\ub7a9",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\uc800\ubd84\uc790 \ud788\uc54c\ub8e8\ub860\uc0b0 \uc138\ub7fc",
+    "price_krw": 60900,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 6493,
+    "avg_rating": 4.1,
+    "key_ingredients": [
+      "\uc544\ub370\ub178\uc2e0",
+      "\uc138\ub77c\ub9c8\uc774\ub4dc",
+      "\ud504\ub85c\ud3f4\ub9ac\uc2a4\ucd94\ucd9c\ubb3c"
+    ],
+    "keyword_sentiment": {
+      "\uc9c4\uc815\ud6a8\uacfc": {
+        "mentioned_count": 1881,
+        "positive_pct": 97
+      },
+      "\ucd09\ucd09\ud568": {
+        "mentioned_count": 937,
+        "positive_pct": 67
+      },
+      "\uc218\ubd84\uac10": {
+        "mentioned_count": 1265,
+        "positive_pct": 94
+      }
+    }
+  },
+  {
+    "id": "SKIN016",
+    "name": "\uc5d0\uc2a4\ud2b8\ub77c \uc800\ubd84\uc790 \ud788\uc54c\ub8e8\ub860\uc0b0 \uc138\ub7fc \ud50c\ub7ec\uc2a4",
+    "brand": "\uc5d0\uc2a4\ud2b8\ub77c",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\uc800\ubd84\uc790 \ud788\uc54c\ub8e8\ub860\uc0b0 \uc138\ub7fc",
+    "price_krw": 60400,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 722,
+    "avg_rating": 4.4,
+    "key_ingredients": [
+      "\ucf5c\ub77c\uac90",
+      "\ud3a9\ud0c0\uc774\ub4dc",
+      "\ud310\ud14c\ub180"
+    ],
+    "keyword_sentiment": {
+      "\uc800\uc790\uadf9": {
+        "mentioned_count": 67,
+        "positive_pct": 69
+      },
+      "\uc9c4\uc815\ud6a8\uacfc": {
+        "mentioned_count": 62,
+        "positive_pct": 82
+      }
+    }
+  },
+  {
+    "id": "SKIN017",
+    "name": "\uc124\ud654\uc218 \uc57d\uc0b0\uc131 \ud1a0\ub108",
+    "brand": "\uc124\ud654\uc218",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\uc57d\uc0b0\uc131 \ud1a0\ub108",
+    "price_krw": 59000,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 932,
+    "avg_rating": 4.4,
+    "key_ingredients": [
+      "\ubca0\ud0c0\uae00\ub8e8\uce78",
+      "\ud310\ud14c\ub180",
+      "\ub098\uc774\uc544\uc2e0\uc544\ub9c8\uc774\ub4dc"
+    ],
+    "keyword_sentiment": {
+      "\uc218\ubd84\uac10": {
+        "mentioned_count": 261,
+        "positive_pct": 79
+      },
+      "\uc9c4\uc815\ud6a8\uacfc": {
+        "mentioned_count": 241,
+        "positive_pct": 86
+      },
+      "\ud761\uc218\ub825": {
+        "mentioned_count": 262,
+        "positive_pct": 90
+      },
+      "\ud0c4\ub825": {
+        "mentioned_count": 242,
+        "positive_pct": 71
+      }
+    }
+  },
+  {
+    "id": "SKIN018",
+    "name": "\ub2e5\ud130\uc9c0 \ucf5c\ub77c\uac90 \uc570\ud50c",
+    "brand": "\ub2e5\ud130\uc9c0",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\ucf5c\ub77c\uac90 \uc570\ud50c",
+    "price_krw": 24300,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 6933,
+    "avg_rating": 4.7,
+    "key_ingredients": [
+      "\uc138\ub77c\ub9c8\uc774\ub4dc",
+      "\ub098\uc774\uc544\uc2e0\uc544\ub9c8\uc774\ub4dc",
+      "\ubca0\ud0c0\uae00\ub8e8\uce78"
+    ],
+    "keyword_sentiment": {
+      "\uc218\ubd84\uac10": {
+        "mentioned_count": 425,
+        "positive_pct": 88
+      },
+      "\ud0c4\ub825": {
+        "mentioned_count": 562,
+        "positive_pct": 68
+      }
+    }
+  },
+  {
+    "id": "SKIN019",
+    "name": "\ub2ec\ubc14 \ube44\ud0c0\ubbfcC \uc138\ub7fc",
+    "brand": "\ub2ec\ubc14",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\ube44\ud0c0\ubbfcC \uc138\ub7fc",
+    "price_krw": 44400,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 5038,
+    "avg_rating": 4.8,
+    "key_ingredients": [
+      "\ucf5c\ub77c\uac90",
+      "\uc13c\ud154\ub77c\uc544\uc2dc\uc544\ud2f0\uce74\ucd94\ucd9c\ubb3c",
+      "\uc138\ub77c\ub9c8\uc774\ub4dc"
+    ],
+    "keyword_sentiment": {
+      "\uc800\uc790\uadf9": {
+        "mentioned_count": 346,
+        "positive_pct": 95
+      },
+      "\uc218\ubd84\uac10": {
+        "mentioned_count": 489,
+        "positive_pct": 71
+      },
+      "\ud761\uc218\ub825": {
+        "mentioned_count": 747,
+        "positive_pct": 88
+      }
+    }
+  },
+  {
+    "id": "SKIN020",
+    "name": "\uba54\ub514\ud790 \uc57d\uc0b0\uc131 \ud1a0\ub108",
+    "brand": "\uba54\ub514\ud790",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\uc57d\uc0b0\uc131 \ud1a0\ub108",
+    "price_krw": 17600,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 5108,
+    "avg_rating": 4.1,
+    "key_ingredients": [
+      "\ubca0\ud0c0\uae00\ub8e8\uce78",
+      "PDRN(\uc5f0\uc5b4DNA)",
+      "\ud788\uc54c\ub8e8\ub860\uc0b0"
+    ],
+    "keyword_sentiment": {
+      "\ucd09\ucd09\ud568": {
+        "mentioned_count": 589,
+        "positive_pct": 84
+      },
+      "\uc800\uc790\uadf9": {
+        "mentioned_count": 725,
+        "positive_pct": 87
+      },
+      "\uc218\ubd84\uac10": {
+        "mentioned_count": 42,
+        "positive_pct": 76
+      },
+      "\ud0c4\ub825": {
+        "mentioned_count": 323,
+        "positive_pct": 90
+      }
+    }
+  },
+  {
+    "id": "SKIN021",
+    "name": "\uc77c\ub9ac\uc724 \uc57d\uc0b0\uc131 \ud1a0\ub108 2.0",
+    "brand": "\uc77c\ub9ac\uc724",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\uc57d\uc0b0\uc131 \ud1a0\ub108",
+    "price_krw": 53500,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 3559,
+    "avg_rating": 4.7,
+    "key_ingredients": [
+      "\ud310\ud14c\ub180",
+      "\uc544\ub370\ub178\uc2e0",
+      "\ubca0\ud0c0\uae00\ub8e8\uce78"
+    ],
+    "keyword_sentiment": {
+      "\uc800\uc790\uadf9": {
+        "mentioned_count": 668,
+        "positive_pct": 85
+      },
+      "\ud761\uc218\ub825": {
+        "mentioned_count": 203,
+        "positive_pct": 68
+      },
+      "\ucd09\ucd09\ud568": {
+        "mentioned_count": 348,
+        "positive_pct": 75
+      }
+    }
+  },
+  {
+    "id": "SKIN022",
+    "name": "\uc544\uc774\uc624\ud398 \ucf5c\ub77c\uac90 \uc570\ud50c",
+    "brand": "\uc544\uc774\uc624\ud398",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\ucf5c\ub77c\uac90 \uc570\ud50c",
+    "price_krw": 60200,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 3512,
+    "avg_rating": 4.0,
+    "key_ingredients": [
+      "\uc138\ub77c\ub9c8\uc774\ub4dc",
+      "\ucf5c\ub77c\uac90",
+      "PDRN(\uc5f0\uc5b4DNA)"
+    ],
+    "keyword_sentiment": {
+      "\ud761\uc218\ub825": {
+        "mentioned_count": 736,
+        "positive_pct": 92
+      },
+      "\uc9c4\uc815\ud6a8\uacfc": {
+        "mentioned_count": 257,
+        "positive_pct": 83
+      },
+      "\uc218\ubd84\uac10": {
+        "mentioned_count": 1026,
+        "positive_pct": 98
+      }
+    }
+  },
+  {
+    "id": "SKIN023",
+    "name": "\ud1a0\ub9ac\ub4e0 \uc13c\ud154\ub77c \uc570\ud50c PRO",
+    "brand": "\ud1a0\ub9ac\ub4e0",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\uc13c\ud154\ub77c \uc570\ud50c",
+    "price_krw": 36600,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 6406,
+    "avg_rating": 4.2,
+    "key_ingredients": [
+      "\uc138\ub77c\ub9c8\uc774\ub4dc",
+      "\ud3a9\ud0c0\uc774\ub4dc",
+      "\ub9c8\ub370\uce74\uc18c\uc0ac\uc774\ub4dc"
+    ],
+    "keyword_sentiment": {
+      "\uc800\uc790\uadf9": {
+        "mentioned_count": 1373,
+        "positive_pct": 72
+      },
+      "\ucd09\ucd09\ud568": {
+        "mentioned_count": 61,
+        "positive_pct": 96
+      }
+    }
+  },
+  {
+    "id": "SKIN024",
+    "name": "\uad6c\ub2ec \uc57d\uc0b0\uc131 \ud1a0\ub108",
+    "brand": "\uad6c\ub2ec",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\uc57d\uc0b0\uc131 \ud1a0\ub108",
+    "price_krw": 51200,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 710,
+    "avg_rating": 4.7,
+    "key_ingredients": [
+      "\uc138\ub77c\ub9c8\uc774\ub4dc",
+      "\ud310\ud14c\ub180",
+      "\ud788\uc54c\ub8e8\ub860\uc0b0"
+    ],
+    "keyword_sentiment": {
+      "\ucd09\ucd09\ud568": {
+        "mentioned_count": 34,
+        "positive_pct": 94
+      },
+      "\uc218\ubd84\uac10": {
+        "mentioned_count": 49,
+        "positive_pct": 85
+      },
+      "\ud0c4\ub825": {
+        "mentioned_count": 177,
+        "positive_pct": 92
+      }
+    }
+  },
+  {
+    "id": "SKIN025",
+    "name": "\uc544\uc774\uc624\ud398 \uc218\ubd84 \uc570\ud50c PRO",
+    "brand": "\uc544\uc774\uc624\ud398",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\uc218\ubd84 \uc570\ud50c",
+    "price_krw": 32500,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 6684,
+    "avg_rating": 4.2,
+    "key_ingredients": [
+      "\ud504\ub85c\ud3f4\ub9ac\uc2a4\ucd94\ucd9c\ubb3c",
+      "\uc5b4\uc131\ucd08\ucd94\ucd9c\ubb3c",
+      "\ud788\uc54c\ub8e8\ub860\uc0b0"
+    ],
+    "keyword_sentiment": {
+      "\ud0c4\ub825": {
+        "mentioned_count": 463,
+        "positive_pct": 80
+      },
+      "\uc800\uc790\uadf9": {
+        "mentioned_count": 1814,
+        "positive_pct": 90
+      },
+      "\uc218\ubd84\uac10": {
+        "mentioned_count": 2176,
+        "positive_pct": 70
+      },
+      "\ud761\uc218\ub825": {
+        "mentioned_count": 1651,
+        "positive_pct": 84
+      }
+    }
+  },
+  {
+    "id": "SKIN026",
+    "name": "\ud5e4\ub77c \uc800\ubd84\uc790 \ud788\uc54c\ub8e8\ub860\uc0b0 \uc138\ub7fc",
+    "brand": "\ud5e4\ub77c",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\uc800\ubd84\uc790 \ud788\uc54c\ub8e8\ub860\uc0b0 \uc138\ub7fc",
+    "price_krw": 67200,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 1708,
+    "avg_rating": 4.2,
+    "key_ingredients": [
+      "\ud504\ub85c\ud3f4\ub9ac\uc2a4\ucd94\ucd9c\ubb3c",
+      "\ubca0\ud0c0\uae00\ub8e8\uce78",
+      "\uc544\ub370\ub178\uc2e0"
+    ],
+    "keyword_sentiment": {
+      "\uc800\uc790\uadf9": {
+        "mentioned_count": 135,
+        "positive_pct": 74
+      },
+      "\ud761\uc218\ub825": {
+        "mentioned_count": 292,
+        "positive_pct": 77
+      },
+      "\uc9c4\uc815\ud6a8\uacfc": {
+        "mentioned_count": 207,
+        "positive_pct": 74
+      }
+    }
+  },
+  {
+    "id": "SKIN027",
+    "name": "\uc124\ud654\uc218 \ucf5c\ub77c\uac90 \uc570\ud50c",
+    "brand": "\uc124\ud654\uc218",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\ucf5c\ub77c\uac90 \uc570\ud50c",
+    "price_krw": 48000,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 7199,
+    "avg_rating": 4.5,
+    "key_ingredients": [
+      "PDRN(\uc5f0\uc5b4DNA)",
+      "\ud2f0\ud2b8\ub9ac\ucd94\ucd9c\ubb3c",
+      "\ub098\uc774\uc544\uc2e0\uc544\ub9c8\uc774\ub4dc"
+    ],
+    "keyword_sentiment": {
+      "\uc800\uc790\uadf9": {
+        "mentioned_count": 1950,
+        "positive_pct": 93
+      },
+      "\ud761\uc218\ub825": {
+        "mentioned_count": 1270,
+        "positive_pct": 82
+      },
+      "\ud0c4\ub825": {
+        "mentioned_count": 260,
+        "positive_pct": 87
+      },
+      "\uc218\ubd84\uac10": {
+        "mentioned_count": 2108,
+        "positive_pct": 69
+      }
+    }
+  },
+  {
+    "id": "SKIN028",
+    "name": "\uba54\ub514\ud790 PDRN \uc138\ub7fc",
+    "brand": "\uba54\ub514\ud790",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "PDRN \uc138\ub7fc",
+    "price_krw": 24200,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 5158,
+    "avg_rating": 4.5,
+    "key_ingredients": [
+      "\ud504\ub85c\ud3f4\ub9ac\uc2a4\ucd94\ucd9c\ubb3c",
+      "\ub098\uc774\uc544\uc2e0\uc544\ub9c8\uc774\ub4dc",
+      "\ub9c8\ub370\uce74\uc18c\uc0ac\uc774\ub4dc"
+    ],
+    "keyword_sentiment": {
+      "\uc9c4\uc815\ud6a8\uacfc": {
+        "mentioned_count": 1165,
+        "positive_pct": 67
+      },
+      "\ud0c4\ub825": {
+        "mentioned_count": 951,
+        "positive_pct": 77
+      },
+      "\ucd09\ucd09\ud568": {
+        "mentioned_count": 688,
+        "positive_pct": 95
+      },
+      "\uc800\uc790\uadf9": {
+        "mentioned_count": 1056,
+        "positive_pct": 74
+      }
+    }
+  },
+  {
+    "id": "SKIN029",
+    "name": "\ub77c\uc6b4\ub4dc\ub7a9 \uc57d\uc0b0\uc131 \ud1a0\ub108 2.0",
+    "brand": "\ub77c\uc6b4\ub4dc\ub7a9",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\uc57d\uc0b0\uc131 \ud1a0\ub108",
+    "price_krw": 19000,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 2149,
+    "avg_rating": 4.3,
+    "key_ingredients": [
+      "\ud3a9\ud0c0\uc774\ub4dc",
+      "\ubca0\ud0c0\uae00\ub8e8\uce78",
+      "\uc138\ub77c\ub9c8\uc774\ub4dc"
+    ],
+    "keyword_sentiment": {
+      "\ud0c4\ub825": {
+        "mentioned_count": 411,
+        "positive_pct": 83
+      },
+      "\ucd09\ucd09\ud568": {
+        "mentioned_count": 426,
+        "positive_pct": 91
+      },
+      "\ud761\uc218\ub825": {
+        "mentioned_count": 376,
+        "positive_pct": 68
+      },
+      "\uc9c4\uc815\ud6a8\uacfc": {
+        "mentioned_count": 676,
+        "positive_pct": 86
+      }
+    }
+  },
+  {
+    "id": "SKIN030",
+    "name": "\ube44\ud50c\ub808\uc778 PDRN \uc138\ub7fc",
+    "brand": "\ube44\ud50c\ub808\uc778",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "PDRN \uc138\ub7fc",
+    "price_krw": 30300,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 2850,
+    "avg_rating": 4.6,
+    "key_ingredients": [
+      "\ud788\uc54c\ub8e8\ub860\uc0b0",
+      "\ud310\ud14c\ub180",
+      "\ud3a9\ud0c0\uc774\ub4dc"
+    ],
+    "keyword_sentiment": {
+      "\uc9c4\uc815\ud6a8\uacfc": {
+        "mentioned_count": 388,
+        "positive_pct": 84
+      },
+      "\ud761\uc218\ub825": {
+        "mentioned_count": 701,
+        "positive_pct": 90
+      }
+    }
+  },
+  {
+    "id": "SKIN031",
+    "name": "\uc544\uc774\uc624\ud398 \uc138\ub77c\ub9c8\uc774\ub4dc \ud06c\ub9bc 2.0",
+    "brand": "\uc544\uc774\uc624\ud398",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\uc138\ub77c\ub9c8\uc774\ub4dc \ud06c\ub9bc",
+    "price_krw": 24500,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 5412,
+    "avg_rating": 4.2,
+    "key_ingredients": [
+      "\ud310\ud14c\ub180",
+      "\ud504\ub85c\ud3f4\ub9ac\uc2a4\ucd94\ucd9c\ubb3c",
+      "\ud788\uc54c\ub8e8\ub860\uc0b0"
+    ],
+    "keyword_sentiment": {
+      "\ud0c4\ub825": {
+        "mentioned_count": 772,
+        "positive_pct": 84
+      },
+      "\uc9c4\uc815\ud6a8\uacfc": {
+        "mentioned_count": 399,
+        "positive_pct": 78
+      },
+      "\uc800\uc790\uadf9": {
+        "mentioned_count": 729,
+        "positive_pct": 96
+      },
+      "\uc218\ubd84\uac10": {
+        "mentioned_count": 423,
+        "positive_pct": 79
+      }
+    }
+  },
+  {
+    "id": "SKIN032",
+    "name": "\ud5e4\ub77c \uc57d\uc0b0\uc131 \ud1a0\ub108",
+    "brand": "\ud5e4\ub77c",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\uc57d\uc0b0\uc131 \ud1a0\ub108",
+    "price_krw": 18800,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 5542,
+    "avg_rating": 4.4,
+    "key_ingredients": [
+      "\ubca0\ud0c0\uae00\ub8e8\uce78",
+      "\ub9c8\ub370\uce74\uc18c\uc0ac\uc774\ub4dc",
+      "\uc13c\ud154\ub77c\uc544\uc2dc\uc544\ud2f0\uce74\ucd94\ucd9c\ubb3c"
+    ],
+    "keyword_sentiment": {
+      "\uc9c4\uc815\ud6a8\uacfc": {
+        "mentioned_count": 345,
+        "positive_pct": 75
+      },
+      "\ud761\uc218\ub825": {
+        "mentioned_count": 400,
+        "positive_pct": 75
+      },
+      "\ud0c4\ub825": {
+        "mentioned_count": 1506,
+        "positive_pct": 93
+      }
+    }
+  },
+  {
+    "id": "SKIN033",
+    "name": "\uc124\ud654\uc218 PDRN \uc138\ub7fc \ud50c\ub7ec\uc2a4",
+    "brand": "\uc124\ud654\uc218",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "PDRN \uc138\ub7fc",
+    "price_krw": 38900,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 4494,
+    "avg_rating": 4.8,
+    "key_ingredients": [
+      "\ud504\ub85c\ud3f4\ub9ac\uc2a4\ucd94\ucd9c\ubb3c",
+      "\uc138\ub77c\ub9c8\uc774\ub4dc",
+      "\ud3a9\ud0c0\uc774\ub4dc"
+    ],
+    "keyword_sentiment": {
+      "\uc800\uc790\uadf9": {
+        "mentioned_count": 427,
+        "positive_pct": 88
+      },
+      "\ud0c4\ub825": {
+        "mentioned_count": 1419,
+        "positive_pct": 93
+      }
+    }
+  },
+  {
+    "id": "SKIN034",
+    "name": "\ud5e4\ub77c \ube44\ud0c0\ubbfcC \uc138\ub7fc 2.0",
+    "brand": "\ud5e4\ub77c",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\ube44\ud0c0\ubbfcC \uc138\ub7fc",
+    "price_krw": 35400,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 6683,
+    "avg_rating": 4.4,
+    "key_ingredients": [
+      "\ud3a9\ud0c0\uc774\ub4dc",
+      "\uc5b4\uc131\ucd08\ucd94\ucd9c\ubb3c",
+      "\uc138\ub77c\ub9c8\uc774\ub4dc"
+    ],
+    "keyword_sentiment": {
+      "\ud761\uc218\ub825": {
+        "mentioned_count": 1998,
+        "positive_pct": 88
+      },
+      "\uc800\uc790\uadf9": {
+        "mentioned_count": 450,
+        "positive_pct": 98
+      },
+      "\uc218\ubd84\uac10": {
+        "mentioned_count": 540,
+        "positive_pct": 83
+      },
+      "\uc9c4\uc815\ud6a8\uacfc": {
+        "mentioned_count": 373,
+        "positive_pct": 75
+      }
+    }
+  },
+  {
+    "id": "SKIN035",
+    "name": "\ub77c\uc6b4\ub4dc\ub7a9 \uc13c\ud154\ub77c \uc570\ud50c \ud50c\ub7ec\uc2a4",
+    "brand": "\ub77c\uc6b4\ub4dc\ub7a9",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\uc13c\ud154\ub77c \uc570\ud50c",
+    "price_krw": 50700,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 7742,
+    "avg_rating": 5.0,
+    "key_ingredients": [
+      "\ub098\uc774\uc544\uc2e0\uc544\ub9c8\uc774\ub4dc",
+      "\uc13c\ud154\ub77c\uc544\uc2dc\uc544\ud2f0\uce74\ucd94\ucd9c\ubb3c",
+      "PDRN(\uc5f0\uc5b4DNA)"
+    ],
+    "keyword_sentiment": {
+      "\ud0c4\ub825": {
+        "mentioned_count": 1653,
+        "positive_pct": 97
+      },
+      "\uc218\ubd84\uac10": {
+        "mentioned_count": 1561,
+        "positive_pct": 80
+      }
+    }
+  },
+  {
+    "id": "SKIN036",
+    "name": "\uc774\ub2c8\uc2a4\ud504\ub9ac \uc800\ubd84\uc790 \ud788\uc54c\ub8e8\ub860\uc0b0 \uc138\ub7fc PRO",
+    "brand": "\uc774\ub2c8\uc2a4\ud504\ub9ac",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\uc800\ubd84\uc790 \ud788\uc54c\ub8e8\ub860\uc0b0 \uc138\ub7fc",
+    "price_krw": 29900,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 1247,
+    "avg_rating": 4.6,
+    "key_ingredients": [
+      "\ud788\uc54c\ub8e8\ub860\uc0b0",
+      "PDRN(\uc5f0\uc5b4DNA)",
+      "\ud310\ud14c\ub180"
+    ],
+    "keyword_sentiment": {
+      "\uc800\uc790\uadf9": {
+        "mentioned_count": 386,
+        "positive_pct": 73
+      },
+      "\ud0c4\ub825": {
+        "mentioned_count": 391,
+        "positive_pct": 95
+      }
+    }
+  },
+  {
+    "id": "SKIN037",
+    "name": "\uad6c\ub2ec \ud310\ud14c\ub180 \ud06c\ub9bc",
+    "brand": "\uad6c\ub2ec",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\ud310\ud14c\ub180 \ud06c\ub9bc",
+    "price_krw": 58300,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 1030,
+    "avg_rating": 4.6,
+    "key_ingredients": [
+      "PDRN(\uc5f0\uc5b4DNA)",
+      "\ubca0\ud0c0\uae00\ub8e8\uce78",
+      "\ud3a9\ud0c0\uc774\ub4dc"
+    ],
+    "keyword_sentiment": {
+      "\ud761\uc218\ub825": {
+        "mentioned_count": 54,
+        "positive_pct": 80
+      },
+      "\uc800\uc790\uadf9": {
+        "mentioned_count": 244,
+        "positive_pct": 94
+      },
+      "\uc218\ubd84\uac10": {
+        "mentioned_count": 62,
+        "positive_pct": 72
+      }
+    }
+  },
+  {
+    "id": "SKIN038",
+    "name": "\ub77c\ub124\uc988 \uc13c\ud154\ub77c \uc570\ud50c 2.0",
+    "brand": "\ub77c\ub124\uc988",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\uc13c\ud154\ub77c \uc570\ud50c",
+    "price_krw": 44800,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 3636,
+    "avg_rating": 4.1,
+    "key_ingredients": [
+      "\ud3a9\ud0c0\uc774\ub4dc",
+      "\ud2f0\ud2b8\ub9ac\ucd94\ucd9c\ubb3c",
+      "\ud504\ub85c\ud3f4\ub9ac\uc2a4\ucd94\ucd9c\ubb3c"
+    ],
+    "keyword_sentiment": {
+      "\uc9c4\uc815\ud6a8\uacfc": {
+        "mentioned_count": 522,
+        "positive_pct": 91
+      },
+      "\uc800\uc790\uadf9": {
+        "mentioned_count": 413,
+        "positive_pct": 70
+      }
+    }
+  },
+  {
+    "id": "SKIN039",
+    "name": "\ub2ec\ubc14 \uc57d\uc0b0\uc131 \ud1a0\ub108",
+    "brand": "\ub2ec\ubc14",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\uc57d\uc0b0\uc131 \ud1a0\ub108",
+    "price_krw": 17000,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 3318,
+    "avg_rating": 4.8,
+    "key_ingredients": [
+      "\ub9c8\ub370\uce74\uc18c\uc0ac\uc774\ub4dc",
+      "\ud504\ub85c\ud3f4\ub9ac\uc2a4\ucd94\ucd9c\ubb3c",
+      "\ub098\uc774\uc544\uc2e0\uc544\ub9c8\uc774\ub4dc"
+    ],
+    "keyword_sentiment": {
+      "\uc218\ubd84\uac10": {
+        "mentioned_count": 549,
+        "positive_pct": 66
+      },
+      "\ud0c4\ub825": {
+        "mentioned_count": 761,
+        "positive_pct": 69
+      },
+      "\uc800\uc790\uadf9": {
+        "mentioned_count": 736,
+        "positive_pct": 80
+      }
+    }
+  },
+  {
+    "id": "SKIN040",
+    "name": "\ub2e5\ud130\uc9c0 \uc218\ubd84 \uc570\ud50c PRO",
+    "brand": "\ub2e5\ud130\uc9c0",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\uc218\ubd84 \uc570\ud50c",
+    "price_krw": 49600,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 6784,
+    "avg_rating": 4.9,
+    "key_ingredients": [
+      "\ub098\uc774\uc544\uc2e0\uc544\ub9c8\uc774\ub4dc",
+      "\ud310\ud14c\ub180",
+      "\ud3a9\ud0c0\uc774\ub4dc"
+    ],
+    "keyword_sentiment": {
+      "\ud761\uc218\ub825": {
+        "mentioned_count": 776,
+        "positive_pct": 73
+      },
+      "\ud0c4\ub825": {
+        "mentioned_count": 288,
+        "positive_pct": 94
+      },
+      "\uc9c4\uc815\ud6a8\uacfc": {
+        "mentioned_count": 181,
+        "positive_pct": 83
+      },
+      "\uc800\uc790\uadf9": {
+        "mentioned_count": 855,
+        "positive_pct": 67
+      }
+    }
+  },
+  {
+    "id": "SKIN041",
+    "name": "\uc544\uc774\uc624\ud398 \uc57d\uc0b0\uc131 \ud1a0\ub108 \ud50c\ub7ec\uc2a4",
+    "brand": "\uc544\uc774\uc624\ud398",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\uc57d\uc0b0\uc131 \ud1a0\ub108",
+    "price_krw": 40900,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 419,
+    "avg_rating": 4.9,
+    "key_ingredients": [
+      "\uc138\ub77c\ub9c8\uc774\ub4dc",
+      "\ub098\uc774\uc544\uc2e0\uc544\ub9c8\uc774\ub4dc",
+      "\uc5b4\uc131\ucd08\ucd94\ucd9c\ubb3c"
+    ],
+    "keyword_sentiment": {
+      "\ud761\uc218\ub825": {
+        "mentioned_count": 113,
+        "positive_pct": 86
+      },
+      "\uc800\uc790\uadf9": {
+        "mentioned_count": 64,
+        "positive_pct": 72
+      },
+      "\uc9c4\uc815\ud6a8\uacfc": {
+        "mentioned_count": 132,
+        "positive_pct": 88
+      },
+      "\uc218\ubd84\uac10": {
+        "mentioned_count": 85,
+        "positive_pct": 90
+      }
+    }
+  },
+  {
+    "id": "SKIN042",
+    "name": "\uc124\ud654\uc218 \ucf5c\ub77c\uac90 \uc570\ud50c PRO",
+    "brand": "\uc124\ud654\uc218",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\ucf5c\ub77c\uac90 \uc570\ud50c",
+    "price_krw": 42300,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 6683,
+    "avg_rating": 4.1,
+    "key_ingredients": [
+      "\ub098\uc774\uc544\uc2e0\uc544\ub9c8\uc774\ub4dc",
+      "\ubca0\ud0c0\uae00\ub8e8\uce78",
+      "\ud310\ud14c\ub180"
+    ],
+    "keyword_sentiment": {
+      "\ucd09\ucd09\ud568": {
+        "mentioned_count": 353,
+        "positive_pct": 92
+      },
+      "\ud0c4\ub825": {
+        "mentioned_count": 769,
+        "positive_pct": 83
+      }
+    }
+  },
+  {
+    "id": "SKIN043",
+    "name": "\ube44\ud50c\ub808\uc778 \ucf5c\ub77c\uac90 \uc570\ud50c",
+    "brand": "\ube44\ud50c\ub808\uc778",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\ucf5c\ub77c\uac90 \uc570\ud50c",
+    "price_krw": 58600,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 1485,
+    "avg_rating": 4.5,
+    "key_ingredients": [
+      "\ub9c8\ub370\uce74\uc18c\uc0ac\uc774\ub4dc",
+      "\ubca0\ud0c0\uae00\ub8e8\uce78",
+      "\uc5b4\uc131\ucd08\ucd94\ucd9c\ubb3c"
+    ],
+    "keyword_sentiment": {
+      "\ud0c4\ub825": {
+        "mentioned_count": 402,
+        "positive_pct": 87
+      },
+      "\uc800\uc790\uadf9": {
+        "mentioned_count": 344,
+        "positive_pct": 92
+      },
+      "\ucd09\ucd09\ud568": {
+        "mentioned_count": 170,
+        "positive_pct": 68
+      },
+      "\uc218\ubd84\uac10": {
+        "mentioned_count": 68,
+        "positive_pct": 90
+      }
+    }
+  },
+  {
+    "id": "SKIN044",
+    "name": "\ud1a0\ub9ac\ub4e0 \ud310\ud14c\ub180 \ud06c\ub9bc",
+    "brand": "\ud1a0\ub9ac\ub4e0",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\ud310\ud14c\ub180 \ud06c\ub9bc",
+    "price_krw": 59800,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 405,
+    "avg_rating": 4.6,
+    "key_ingredients": [
+      "\ubca0\ud0c0\uae00\ub8e8\uce78",
+      "\uc544\ub370\ub178\uc2e0",
+      "\ub098\uc774\uc544\uc2e0\uc544\ub9c8\uc774\ub4dc"
+    ],
+    "keyword_sentiment": {
+      "\uc218\ubd84\uac10": {
+        "mentioned_count": 129,
+        "positive_pct": 88
+      },
+      "\ud761\uc218\ub825": {
+        "mentioned_count": 76,
+        "positive_pct": 89
+      }
+    }
+  },
+  {
+    "id": "SKIN045",
+    "name": "\uc774\ub2c8\uc2a4\ud504\ub9ac \ucf5c\ub77c\uac90 \uc570\ud50c",
+    "brand": "\uc774\ub2c8\uc2a4\ud504\ub9ac",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\ucf5c\ub77c\uac90 \uc570\ud50c",
+    "price_krw": 29000,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 4457,
+    "avg_rating": 4.9,
+    "key_ingredients": [
+      "\ud788\uc54c\ub8e8\ub860\uc0b0",
+      "\ud310\ud14c\ub180",
+      "\ud504\ub85c\ud3f4\ub9ac\uc2a4\ucd94\ucd9c\ubb3c"
+    ],
+    "keyword_sentiment": {
+      "\ud0c4\ub825": {
+        "mentioned_count": 541,
+        "positive_pct": 72
+      },
+      "\uc800\uc790\uadf9": {
+        "mentioned_count": 83,
+        "positive_pct": 76
+      },
+      "\uc9c4\uc815\ud6a8\uacfc": {
+        "mentioned_count": 1052,
+        "positive_pct": 98
+      }
+    }
+  },
+  {
+    "id": "SKIN046",
+    "name": "\uc77c\ub9ac\uc724 \ucf5c\ub77c\uac90 \uc570\ud50c 2.0",
+    "brand": "\uc77c\ub9ac\uc724",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\ucf5c\ub77c\uac90 \uc570\ud50c",
+    "price_krw": 44200,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 5805,
+    "avg_rating": 4.8,
+    "key_ingredients": [
+      "\ud2f0\ud2b8\ub9ac\ucd94\ucd9c\ubb3c",
+      "\ub098\uc774\uc544\uc2e0\uc544\ub9c8\uc774\ub4dc",
+      "\ubca0\ud0c0\uae00\ub8e8\uce78"
+    ],
+    "keyword_sentiment": {
+      "\ud761\uc218\ub825": {
+        "mentioned_count": 1776,
+        "positive_pct": 69
+      },
+      "\uc218\ubd84\uac10": {
+        "mentioned_count": 955,
+        "positive_pct": 76
+      },
+      "\ucd09\ucd09\ud568": {
+        "mentioned_count": 1870,
+        "positive_pct": 93
+      }
+    }
+  },
+  {
+    "id": "SKIN047",
+    "name": "\uc774\ub2c8\uc2a4\ud504\ub9ac \uc800\ubd84\uc790 \ud788\uc54c\ub8e8\ub860\uc0b0 \uc138\ub7fc",
+    "brand": "\uc774\ub2c8\uc2a4\ud504\ub9ac",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\uc800\ubd84\uc790 \ud788\uc54c\ub8e8\ub860\uc0b0 \uc138\ub7fc",
+    "price_krw": 44700,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 7421,
+    "avg_rating": 4.0,
+    "key_ingredients": [
+      "\ud3a9\ud0c0\uc774\ub4dc",
+      "\ucf5c\ub77c\uac90",
+      "\ub098\uc774\uc544\uc2e0\uc544\ub9c8\uc774\ub4dc"
+    ],
+    "keyword_sentiment": {
+      "\ud761\uc218\ub825": {
+        "mentioned_count": 2113,
+        "positive_pct": 79
+      },
+      "\ucd09\ucd09\ud568": {
+        "mentioned_count": 527,
+        "positive_pct": 77
+      },
+      "\uc800\uc790\uadf9": {
+        "mentioned_count": 598,
+        "positive_pct": 80
+      }
+    }
+  },
+  {
+    "id": "SKIN048",
+    "name": "\uc124\ud654\uc218 \uc57d\uc0b0\uc131 \ud1a0\ub108 2.0",
+    "brand": "\uc124\ud654\uc218",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\uc57d\uc0b0\uc131 \ud1a0\ub108",
+    "price_krw": 23800,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 658,
+    "avg_rating": 4.5,
+    "key_ingredients": [
+      "\ud3a9\ud0c0\uc774\ub4dc",
+      "\ub098\uc774\uc544\uc2e0\uc544\ub9c8\uc774\ub4dc",
+      "\uc5b4\uc131\ucd08\ucd94\ucd9c\ubb3c"
+    ],
+    "keyword_sentiment": {
+      "\ud0c4\ub825": {
+        "mentioned_count": 134,
+        "positive_pct": 69
+      },
+      "\ucd09\ucd09\ud568": {
+        "mentioned_count": 62,
+        "positive_pct": 85
+      },
+      "\uc9c4\uc815\ud6a8\uacfc": {
+        "mentioned_count": 194,
+        "positive_pct": 69
+      }
+    }
+  },
+  {
+    "id": "SKIN049",
+    "name": "\ucf54\uc2a4\uc54c\uc5d1\uc2a4 \uc57d\uc0b0\uc131 \ud1a0\ub108",
+    "brand": "\ucf54\uc2a4\uc54c\uc5d1\uc2a4",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "\uc57d\uc0b0\uc131 \ud1a0\ub108",
+    "price_krw": 33600,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 6409,
+    "avg_rating": 4.2,
+    "key_ingredients": [
+      "\ub9c8\ub370\uce74\uc18c\uc0ac\uc774\ub4dc",
+      "\uc13c\ud154\ub77c\uc544\uc2dc\uc544\ud2f0\uce74\ucd94\ucd9c\ubb3c",
+      "\ub098\uc774\uc544\uc2e0\uc544\ub9c8\uc774\ub4dc"
+    ],
+    "keyword_sentiment": {
+      "\ud0c4\ub825": {
+        "mentioned_count": 256,
+        "positive_pct": 72
+      },
+      "\uc9c4\uc815\ud6a8\uacfc": {
+        "mentioned_count": 656,
+        "positive_pct": 84
+      }
+    }
+  },
+  {
+    "id": "SKIN050",
+    "name": "\ud5e4\ub77c PDRN \uc138\ub7fc",
+    "brand": "\ud5e4\ub77c",
+    "category": "\uae30\ucd08\uc81c\ud488",
+    "subtype": "PDRN \uc138\ub7fc",
+    "price_krw": 40600,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 1728,
+    "avg_rating": 4.1,
+    "key_ingredients": [
+      "\ubca0\ud0c0\uae00\ub8e8\uce78",
+      "\ud504\ub85c\ud3f4\ub9ac\uc2a4\ucd94\ucd9c\ubb3c",
+      "\ucf5c\ub77c\uac90"
+    ],
+    "keyword_sentiment": {
+      "\uc9c4\uc815\ud6a8\uacfc": {
+        "mentioned_count": 340,
+        "positive_pct": 70
+      },
+      "\uc800\uc790\uadf9": {
+        "mentioned_count": 544,
+        "positive_pct": 75
+      },
+      "\ud761\uc218\ub825": {
+        "mentioned_count": 187,
+        "positive_pct": 75
+      },
+      "\ucd09\ucd09\ud568": {
+        "mentioned_count": 375,
+        "positive_pct": 67
+      }
+    }
+  },
+  {
+    "id": "COLOR001",
+    "name": "3CE \ub9bd\ud2f4\ud2b8",
+    "brand": "3CE",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\ub9bd\ud2f4\ud2b8",
+    "price_krw": 30300,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 5183,
+    "avg_rating": 4.4,
+    "key_ingredients": [
+      "\ube44\ud0c0\ubbfcE",
+      "\ub9c8\uc774\ud06c\ub85c \ud384 \ud30c\uc6b0\ub354",
+      "\uace0\ubc1c\uc0c9 \uc548\ub8cc"
+    ],
+    "keyword_sentiment": {
+      "\ucee4\ubc84\ub825": {
+        "mentioned_count": 648,
+        "positive_pct": 95
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 531,
+        "positive_pct": 90
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 639,
+        "positive_pct": 94
+      },
+      "\ubc1c\ub9bc\uc131": {
+        "mentioned_count": 179,
+        "positive_pct": 68
+      }
+    }
+  },
+  {
+    "id": "COLOR002",
+    "name": "\ubbf8\uc0e4 \ube14\ub7ec \ud504\ub77c\uc774\uba38 PRO",
+    "brand": "\ubbf8\uc0e4",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\ube14\ub7ec \ud504\ub77c\uc774\uba38",
+    "price_krw": 45700,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 2735,
+    "avg_rating": 4.1,
+    "key_ingredients": [
+      "\uc2e4\ub9ac\ucf58 \ucf54\ud305 \ud30c\uc6b0\ub354",
+      "\ud544\ub984\ud615\uc131 \ud3f4\ub9ac\uba38",
+      "\ube44\uc988\uc641\uc2a4"
+    ],
+    "keyword_sentiment": {
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 557,
+        "positive_pct": 71
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 356,
+        "positive_pct": 80
+      },
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 507,
+        "positive_pct": 72
+      },
+      "\ubc1c\ub9bc\uc131": {
+        "mentioned_count": 303,
+        "positive_pct": 93
+      }
+    }
+  },
+  {
+    "id": "COLOR003",
+    "name": "\uc544\ubaa8\uc2a4 \ube14\ub80c\ub354\ube14 \ube14\ub7ec\uc154 2.0",
+    "brand": "\uc544\ubaa8\uc2a4",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\ube14\ub80c\ub354\ube14 \ube14\ub7ec\uc154",
+    "price_krw": 17100,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 6784,
+    "avg_rating": 4.0,
+    "key_ingredients": [
+      "\ube44\uc988\uc641\uc2a4",
+      "\uce74\uba5c\ub9ac\uc544\uaf43\uc624\uc77c",
+      "\ube44\ud0c0\ubbfcE"
+    ],
+    "keyword_sentiment": {
+      "\ubc1c\ub9bc\uc131": {
+        "mentioned_count": 682,
+        "positive_pct": 96
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 2138,
+        "positive_pct": 94
+      },
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 2072,
+        "positive_pct": 84
+      }
+    }
+  },
+  {
+    "id": "COLOR004",
+    "name": "\uc5d0\ub6f0\ub4dc \ub9bd\ud2f4\ud2b8",
+    "brand": "\uc5d0\ub6f0\ub4dc",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\ub9bd\ud2f4\ud2b8",
+    "price_krw": 27000,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 518,
+    "avg_rating": 4.4,
+    "key_ingredients": [
+      "\ud544\ub984\ud615\uc131 \ud3f4\ub9ac\uba38",
+      "\ud310\ud14c\ub180",
+      "\ube44\uc988\uc641\uc2a4"
+    ],
+    "keyword_sentiment": {
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 150,
+        "positive_pct": 83
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 167,
+        "positive_pct": 65
+      }
+    }
+  },
+  {
+    "id": "COLOR005",
+    "name": "\ubbf8\uc0e4 \uae00\ub85c\uc6b0 \ucfe0\uc158 \ud50c\ub7ec\uc2a4",
+    "brand": "\ubbf8\uc0e4",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\uae00\ub85c\uc6b0 \ucfe0\uc158",
+    "price_krw": 11600,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 4791,
+    "avg_rating": 4.4,
+    "key_ingredients": [
+      "\ud310\ud14c\ub180",
+      "\uce74\uba5c\ub9ac\uc544\uaf43\uc624\uc77c",
+      "\ub9c8\uc774\ud06c\ub85c \ud384 \ud30c\uc6b0\ub354"
+    ],
+    "keyword_sentiment": {
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 821,
+        "positive_pct": 97
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 952,
+        "positive_pct": 82
+      },
+      "\ubc1c\ub9bc\uc131": {
+        "mentioned_count": 1306,
+        "positive_pct": 72
+      },
+      "\ucee4\ubc84\ub825": {
+        "mentioned_count": 293,
+        "positive_pct": 71
+      }
+    }
+  },
+  {
+    "id": "COLOR006",
+    "name": "\ud640\ub9ac\uce74\ud640\ub9ac\uce74 \ube14\ub7ec \ud504\ub77c\uc774\uba38 2.0",
+    "brand": "\ud640\ub9ac\uce74\ud640\ub9ac\uce74",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\ube14\ub7ec \ud504\ub77c\uc774\uba38",
+    "price_krw": 39800,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 4290,
+    "avg_rating": 4.6,
+    "key_ingredients": [
+      "\uce74\uba5c\ub9ac\uc544\uaf43\uc624\uc77c",
+      "\ud2b8\ub9ac\ud2b8\uba3c\ud2b8 \uc624\uc77c",
+      "\ud310\ud14c\ub180"
+    ],
+    "keyword_sentiment": {
+      "\ubc1c\ub9bc\uc131": {
+        "mentioned_count": 109,
+        "positive_pct": 73
+      },
+      "\ucee4\ubc84\ub825": {
+        "mentioned_count": 712,
+        "positive_pct": 95
+      },
+      "\uc724\uad11": {
+        "mentioned_count": 1093,
+        "positive_pct": 94
+      }
+    }
+  },
+  {
+    "id": "COLOR007",
+    "name": "\ud5e4\ub77c \uae00\ub798\uc2a4 \ud2f4\ud2b8 2.0",
+    "brand": "\ud5e4\ub77c",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\uae00\ub798\uc2a4 \ud2f4\ud2b8",
+    "price_krw": 29100,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 5170,
+    "avg_rating": 5.0,
+    "key_ingredients": [
+      "\ub9c8\uc774\ud06c\ub85c \ud384 \ud30c\uc6b0\ub354",
+      "\ud544\ub984\ud615\uc131 \ud3f4\ub9ac\uba38",
+      "\uc2e4\ub9ac\ucf58 \ucf54\ud305 \ud30c\uc6b0\ub354"
+    ],
+    "keyword_sentiment": {
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 1073,
+        "positive_pct": 96
+      },
+      "\ubc1c\ub9bc\uc131": {
+        "mentioned_count": 1481,
+        "positive_pct": 84
+      },
+      "\uc724\uad11": {
+        "mentioned_count": 1002,
+        "positive_pct": 66
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 784,
+        "positive_pct": 86
+      }
+    }
+  },
+  {
+    "id": "COLOR008",
+    "name": "\ud5e4\ub77c \uc544\uc774 \ud314\ub808\ud2b8 PRO",
+    "brand": "\ud5e4\ub77c",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\uc544\uc774 \ud314\ub808\ud2b8",
+    "price_krw": 42500,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 6533,
+    "avg_rating": 4.0,
+    "key_ingredients": [
+      "\ud310\ud14c\ub180",
+      "\ube44\uc988\uc641\uc2a4",
+      "\ud2b8\ub9ac\ud2b8\uba3c\ud2b8 \uc624\uc77c"
+    ],
+    "keyword_sentiment": {
+      "\ubc1c\ub9bc\uc131": {
+        "mentioned_count": 1997,
+        "positive_pct": 75
+      },
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 2177,
+        "positive_pct": 89
+      },
+      "\ucee4\ubc84\ub825": {
+        "mentioned_count": 635,
+        "positive_pct": 80
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 159,
+        "positive_pct": 72
+      }
+    }
+  },
+  {
+    "id": "COLOR009",
+    "name": "\uc5b4\ud4e8 \ub9bd\ud2f4\ud2b8 \ud50c\ub7ec\uc2a4",
+    "brand": "\uc5b4\ud4e8",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\ub9bd\ud2f4\ud2b8",
+    "price_krw": 34600,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 6468,
+    "avg_rating": 4.5,
+    "key_ingredients": [
+      "\ud544\ub984\ud615\uc131 \ud3f4\ub9ac\uba38",
+      "\ube44\ud0c0\ubbfcE",
+      "\uace0\ubc1c\uc0c9 \uc548\ub8cc"
+    ],
+    "keyword_sentiment": {
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 879,
+        "positive_pct": 85
+      },
+      "\ucee4\ubc84\ub825": {
+        "mentioned_count": 1989,
+        "positive_pct": 98
+      },
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 1573,
+        "positive_pct": 85
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 739,
+        "positive_pct": 94
+      }
+    }
+  },
+  {
+    "id": "COLOR010",
+    "name": "\uc5d0\ub6f0\ub4dc \ucfe0\uc158 \ud30c\uc6b4\ub370\uc774\uc158",
+    "brand": "\uc5d0\ub6f0\ub4dc",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\ucfe0\uc158 \ud30c\uc6b4\ub370\uc774\uc158",
+    "price_krw": 24200,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 1962,
+    "avg_rating": 4.9,
+    "key_ingredients": [
+      "\ube44\uc988\uc641\uc2a4",
+      "\ud310\ud14c\ub180",
+      "\ud2b8\ub9ac\ud2b8\uba3c\ud2b8 \uc624\uc77c"
+    ],
+    "keyword_sentiment": {
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 354,
+        "positive_pct": 95
+      },
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 387,
+        "positive_pct": 82
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 324,
+        "positive_pct": 72
+      }
+    }
+  },
+  {
+    "id": "COLOR011",
+    "name": "3CE \uae00\ub85c\uc6b0 \ucfe0\uc158 PRO",
+    "brand": "3CE",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\uae00\ub85c\uc6b0 \ucfe0\uc158",
+    "price_krw": 45500,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 767,
+    "avg_rating": 4.1,
+    "key_ingredients": [
+      "\ub9c8\uc774\ud06c\ub85c \ud384 \ud30c\uc6b0\ub354",
+      "\uace0\ubc1c\uc0c9 \uc548\ub8cc",
+      "\uce74\uba5c\ub9ac\uc544\uaf43\uc624\uc77c"
+    ],
+    "keyword_sentiment": {
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 84,
+        "positive_pct": 77
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 241,
+        "positive_pct": 82
+      },
+      "\uc724\uad11": {
+        "mentioned_count": 173,
+        "positive_pct": 82
+      }
+    }
+  },
+  {
+    "id": "COLOR012",
+    "name": "\ub86c\uc564 \ub9bd\ud2f4\ud2b8 2.0",
+    "brand": "\ub86c\uc564",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\ub9bd\ud2f4\ud2b8",
+    "price_krw": 11600,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 940,
+    "avg_rating": 4.7,
+    "key_ingredients": [
+      "\ud544\ub984\ud615\uc131 \ud3f4\ub9ac\uba38",
+      "\ud310\ud14c\ub180",
+      "\ub9c8\uc774\ud06c\ub85c \ud384 \ud30c\uc6b0\ub354"
+    ],
+    "keyword_sentiment": {
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 100,
+        "positive_pct": 65
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 311,
+        "positive_pct": 75
+      },
+      "\ucee4\ubc84\ub825": {
+        "mentioned_count": 238,
+        "positive_pct": 95
+      }
+    }
+  },
+  {
+    "id": "COLOR013",
+    "name": "\uc785\uc0dd\ub85c\ub791 \uae00\ub85c\uc6b0 \ucfe0\uc158",
+    "brand": "\uc785\uc0dd\ub85c\ub791",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\uae00\ub85c\uc6b0 \ucfe0\uc158",
+    "price_krw": 42300,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 4823,
+    "avg_rating": 4.8,
+    "key_ingredients": [
+      "\ud2b8\ub9ac\ud2b8\uba3c\ud2b8 \uc624\uc77c",
+      "\ud544\ub984\ud615\uc131 \ud3f4\ub9ac\uba38",
+      "\uc2e4\ub9ac\ucf58 \ucf54\ud305 \ud30c\uc6b0\ub354"
+    ],
+    "keyword_sentiment": {
+      "\ubc1c\ub9bc\uc131": {
+        "mentioned_count": 388,
+        "positive_pct": 91
+      },
+      "\ucee4\ubc84\ub825": {
+        "mentioned_count": 390,
+        "positive_pct": 67
+      }
+    }
+  },
+  {
+    "id": "COLOR014",
+    "name": "\ub86c\uc564 \ucfe0\uc158 \ud30c\uc6b4\ub370\uc774\uc158",
+    "brand": "\ub86c\uc564",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\ucfe0\uc158 \ud30c\uc6b4\ub370\uc774\uc158",
+    "price_krw": 39800,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 999,
+    "avg_rating": 4.2,
+    "key_ingredients": [
+      "\ube44\ud0c0\ubbfcE",
+      "\ud544\ub984\ud615\uc131 \ud3f4\ub9ac\uba38",
+      "\ud2b8\ub9ac\ud2b8\uba3c\ud2b8 \uc624\uc77c"
+    ],
+    "keyword_sentiment": {
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 98,
+        "positive_pct": 97
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 269,
+        "positive_pct": 82
+      },
+      "\ubc1c\ub9bc\uc131": {
+        "mentioned_count": 128,
+        "positive_pct": 72
+      }
+    }
+  },
+  {
+    "id": "COLOR015",
+    "name": "\ub86c\uc564 \uae00\ub798\uc2a4 \ud2f4\ud2b8 PRO",
+    "brand": "\ub86c\uc564",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\uae00\ub798\uc2a4 \ud2f4\ud2b8",
+    "price_krw": 38000,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 5644,
+    "avg_rating": 4.1,
+    "key_ingredients": [
+      "\uc800\ubd84\uc790 \ud788\uc54c\ub8e8\ub860\uc0b0",
+      "\ud2b8\ub9ac\ud2b8\uba3c\ud2b8 \uc624\uc77c",
+      "\uce74\uba5c\ub9ac\uc544\uaf43\uc624\uc77c"
+    ],
+    "keyword_sentiment": {
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 1783,
+        "positive_pct": 90
+      },
+      "\ubc1c\ub9bc\uc131": {
+        "mentioned_count": 1723,
+        "positive_pct": 92
+      }
+    }
+  },
+  {
+    "id": "COLOR016",
+    "name": "\ud0ec\ubc84\ub9b0\uc988 \uae00\ub798\uc2a4 \ud2f4\ud2b8 2.0",
+    "brand": "\ud0ec\ubc84\ub9b0\uc988",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\uae00\ub798\uc2a4 \ud2f4\ud2b8",
+    "price_krw": 9300,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 2256,
+    "avg_rating": 4.1,
+    "key_ingredients": [
+      "\uc800\ubd84\uc790 \ud788\uc54c\ub8e8\ub860\uc0b0",
+      "\ube44\ud0c0\ubbfcE",
+      "\ud544\ub984\ud615\uc131 \ud3f4\ub9ac\uba38"
+    ],
+    "keyword_sentiment": {
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 367,
+        "positive_pct": 84
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 626,
+        "positive_pct": 65
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 297,
+        "positive_pct": 88
+      }
+    }
+  },
+  {
+    "id": "COLOR017",
+    "name": "\ud398\ub9ac\ud398\ub77c \ube14\ub80c\ub354\ube14 \ube14\ub7ec\uc154",
+    "brand": "\ud398\ub9ac\ud398\ub77c",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\ube14\ub80c\ub354\ube14 \ube14\ub7ec\uc154",
+    "price_krw": 45000,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 6426,
+    "avg_rating": 4.7,
+    "key_ingredients": [
+      "\ub9c8\uc774\ud06c\ub85c \ud384 \ud30c\uc6b0\ub354",
+      "\ud310\ud14c\ub180",
+      "\ube44\uc988\uc641\uc2a4"
+    ],
+    "keyword_sentiment": {
+      "\uc724\uad11": {
+        "mentioned_count": 1535,
+        "positive_pct": 79
+      },
+      "\ucee4\ubc84\ub825": {
+        "mentioned_count": 927,
+        "positive_pct": 73
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 1988,
+        "positive_pct": 74
+      }
+    }
+  },
+  {
+    "id": "COLOR018",
+    "name": "\ub9e5 \uc544\uc774 \ud314\ub808\ud2b8",
+    "brand": "\ub9e5",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\uc544\uc774 \ud314\ub808\ud2b8",
+    "price_krw": 50000,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 5560,
+    "avg_rating": 4.1,
+    "key_ingredients": [
+      "\ub9c8\uc774\ud06c\ub85c \ud384 \ud30c\uc6b0\ub354",
+      "\uc800\ubd84\uc790 \ud788\uc54c\ub8e8\ub860\uc0b0",
+      "\uc2e4\ub9ac\ucf58 \ucf54\ud305 \ud30c\uc6b0\ub354"
+    ],
+    "keyword_sentiment": {
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 1818,
+        "positive_pct": 70
+      },
+      "\ubc1c\ub9bc\uc131": {
+        "mentioned_count": 1106,
+        "positive_pct": 93
+      }
+    }
+  },
+  {
+    "id": "COLOR019",
+    "name": "\uc544\ubaa8\uc2a4 \ub9bd\ud2f4\ud2b8",
+    "brand": "\uc544\ubaa8\uc2a4",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\ub9bd\ud2f4\ud2b8",
+    "price_krw": 36400,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 1347,
+    "avg_rating": 4.1,
+    "key_ingredients": [
+      "\uce74\uba5c\ub9ac\uc544\uaf43\uc624\uc77c",
+      "\ube44\ud0c0\ubbfcE",
+      "\uc2e4\ub9ac\ucf58 \ucf54\ud305 \ud30c\uc6b0\ub354"
+    ],
+    "keyword_sentiment": {
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 256,
+        "positive_pct": 72
+      },
+      "\ubc1c\ub9bc\uc131": {
+        "mentioned_count": 378,
+        "positive_pct": 78
+      }
+    }
+  },
+  {
+    "id": "COLOR020",
+    "name": "\ud0ec\ubc84\ub9b0\uc988 \ube14\ub7ec \ud504\ub77c\uc774\uba38",
+    "brand": "\ud0ec\ubc84\ub9b0\uc988",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\ube14\ub7ec \ud504\ub77c\uc774\uba38",
+    "price_krw": 30200,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 3862,
+    "avg_rating": 4.4,
+    "key_ingredients": [
+      "\uc800\ubd84\uc790 \ud788\uc54c\ub8e8\ub860\uc0b0",
+      "\uce74\uba5c\ub9ac\uc544\uaf43\uc624\uc77c",
+      "\uc2e4\ub9ac\ucf58 \ucf54\ud305 \ud30c\uc6b0\ub354"
+    ],
+    "keyword_sentiment": {
+      "\ucee4\ubc84\ub825": {
+        "mentioned_count": 661,
+        "positive_pct": 66
+      },
+      "\ubc1c\ub9bc\uc131": {
+        "mentioned_count": 840,
+        "positive_pct": 81
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 36,
+        "positive_pct": 78
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 1214,
+        "positive_pct": 69
+      }
+    }
+  },
+  {
+    "id": "COLOR021",
+    "name": "\ud074\ub9ac\uc624 \uc544\uc774 \ud314\ub808\ud2b8",
+    "brand": "\ud074\ub9ac\uc624",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\uc544\uc774 \ud314\ub808\ud2b8",
+    "price_krw": 23600,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 3469,
+    "avg_rating": 4.1,
+    "key_ingredients": [
+      "\uce74\uba5c\ub9ac\uc544\uaf43\uc624\uc77c",
+      "\ud2b8\ub9ac\ud2b8\uba3c\ud2b8 \uc624\uc77c",
+      "\ud310\ud14c\ub180"
+    ],
+    "keyword_sentiment": {
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 796,
+        "positive_pct": 89
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 948,
+        "positive_pct": 89
+      }
+    }
+  },
+  {
+    "id": "COLOR022",
+    "name": "\ud074\ub9ac\uc624 \ube14\ub7ec \ud504\ub77c\uc774\uba38",
+    "brand": "\ud074\ub9ac\uc624",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\ube14\ub7ec \ud504\ub77c\uc774\uba38",
+    "price_krw": 29100,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 4452,
+    "avg_rating": 4.5,
+    "key_ingredients": [
+      "\uace0\ubc1c\uc0c9 \uc548\ub8cc",
+      "\ub9c8\uc774\ud06c\ub85c \ud384 \ud30c\uc6b0\ub354",
+      "\ube44\ud0c0\ubbfcE"
+    ],
+    "keyword_sentiment": {
+      "\uc724\uad11": {
+        "mentioned_count": 37,
+        "positive_pct": 66
+      },
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 641,
+        "positive_pct": 94
+      }
+    }
+  },
+  {
+    "id": "COLOR023",
+    "name": "\ubbf8\uc0e4 \ube14\ub7ec \ud504\ub77c\uc774\uba38 PRO",
+    "brand": "\ubbf8\uc0e4",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\ube14\ub7ec \ud504\ub77c\uc774\uba38",
+    "price_krw": 18600,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 7799,
+    "avg_rating": 4.7,
+    "key_ingredients": [
+      "\ube44\uc988\uc641\uc2a4",
+      "\ube44\ud0c0\ubbfcE",
+      "\uace0\ubc1c\uc0c9 \uc548\ub8cc"
+    ],
+    "keyword_sentiment": {
+      "\ucee4\ubc84\ub825": {
+        "mentioned_count": 94,
+        "positive_pct": 80
+      },
+      "\uc724\uad11": {
+        "mentioned_count": 874,
+        "positive_pct": 69
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 443,
+        "positive_pct": 67
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 1858,
+        "positive_pct": 68
+      }
+    }
+  },
+  {
+    "id": "COLOR024",
+    "name": "\ub2ec\ubc14 \ub9bd\ud2f4\ud2b8",
+    "brand": "\ub2ec\ubc14",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\ub9bd\ud2f4\ud2b8",
+    "price_krw": 16100,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 4247,
+    "avg_rating": 4.4,
+    "key_ingredients": [
+      "\ud544\ub984\ud615\uc131 \ud3f4\ub9ac\uba38",
+      "\uc2e4\ub9ac\ucf58 \ucf54\ud305 \ud30c\uc6b0\ub354",
+      "\ud2b8\ub9ac\ud2b8\uba3c\ud2b8 \uc624\uc77c"
+    ],
+    "keyword_sentiment": {
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 1212,
+        "positive_pct": 85
+      },
+      "\ubc1c\ub9bc\uc131": {
+        "mentioned_count": 515,
+        "positive_pct": 84
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 323,
+        "positive_pct": 98
+      }
+    }
+  },
+  {
+    "id": "COLOR025",
+    "name": "\uc785\uc0dd\ub85c\ub791 \ube14\ub80c\ub354\ube14 \ube14\ub7ec\uc154",
+    "brand": "\uc785\uc0dd\ub85c\ub791",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\ube14\ub80c\ub354\ube14 \ube14\ub7ec\uc154",
+    "price_krw": 34300,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 504,
+    "avg_rating": 4.2,
+    "key_ingredients": [
+      "\uace0\ubc1c\uc0c9 \uc548\ub8cc",
+      "\ud544\ub984\ud615\uc131 \ud3f4\ub9ac\uba38",
+      "\ud2b8\ub9ac\ud2b8\uba3c\ud2b8 \uc624\uc77c"
+    ],
+    "keyword_sentiment": {
+      "\uc724\uad11": {
+        "mentioned_count": 136,
+        "positive_pct": 91
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 68,
+        "positive_pct": 84
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 126,
+        "positive_pct": 76
+      }
+    }
+  },
+  {
+    "id": "COLOR026",
+    "name": "\ud640\ub9ac\uce74\ud640\ub9ac\uce74 \uc544\uc774 \ud314\ub808\ud2b8",
+    "brand": "\ud640\ub9ac\uce74\ud640\ub9ac\uce74",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\uc544\uc774 \ud314\ub808\ud2b8",
+    "price_krw": 37700,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 3500,
+    "avg_rating": 4.8,
+    "key_ingredients": [
+      "\uc800\ubd84\uc790 \ud788\uc54c\ub8e8\ub860\uc0b0",
+      "\uce74\uba5c\ub9ac\uc544\uaf43\uc624\uc77c",
+      "\uace0\ubc1c\uc0c9 \uc548\ub8cc"
+    ],
+    "keyword_sentiment": {
+      "\ubc1c\ub9bc\uc131": {
+        "mentioned_count": 825,
+        "positive_pct": 80
+      },
+      "\uc724\uad11": {
+        "mentioned_count": 552,
+        "positive_pct": 78
+      },
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 706,
+        "positive_pct": 70
+      }
+    }
+  },
+  {
+    "id": "COLOR027",
+    "name": "\ub86c\uc564 \ucfe0\uc158 \ud30c\uc6b4\ub370\uc774\uc158 \ud50c\ub7ec\uc2a4",
+    "brand": "\ub86c\uc564",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\ucfe0\uc158 \ud30c\uc6b4\ub370\uc774\uc158",
+    "price_krw": 43400,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 5075,
+    "avg_rating": 5.0,
+    "key_ingredients": [
+      "\uc800\ubd84\uc790 \ud788\uc54c\ub8e8\ub860\uc0b0",
+      "\ube44\ud0c0\ubbfcE",
+      "\uace0\ubc1c\uc0c9 \uc548\ub8cc"
+    ],
+    "keyword_sentiment": {
+      "\ucee4\ubc84\ub825": {
+        "mentioned_count": 1513,
+        "positive_pct": 78
+      },
+      "\uc724\uad11": {
+        "mentioned_count": 1011,
+        "positive_pct": 78
+      },
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 711,
+        "positive_pct": 84
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 61,
+        "positive_pct": 78
+      }
+    }
+  },
+  {
+    "id": "COLOR028",
+    "name": "\ub9e5 \ub9bd\ud2f4\ud2b8 \ud50c\ub7ec\uc2a4",
+    "brand": "\ub9e5",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\ub9bd\ud2f4\ud2b8",
+    "price_krw": 21200,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 4642,
+    "avg_rating": 4.5,
+    "key_ingredients": [
+      "\ube44\ud0c0\ubbfcE",
+      "\ud310\ud14c\ub180",
+      "\uace0\ubc1c\uc0c9 \uc548\ub8cc"
+    ],
+    "keyword_sentiment": {
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 1122,
+        "positive_pct": 87
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 661,
+        "positive_pct": 81
+      },
+      "\ubc1c\ub9bc\uc131": {
+        "mentioned_count": 766,
+        "positive_pct": 97
+      }
+    }
+  },
+  {
+    "id": "COLOR029",
+    "name": "\ubbf8\uc0e4 \uae00\ub798\uc2a4 \ud2f4\ud2b8 \ud50c\ub7ec\uc2a4",
+    "brand": "\ubbf8\uc0e4",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\uae00\ub798\uc2a4 \ud2f4\ud2b8",
+    "price_krw": 11300,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 4728,
+    "avg_rating": 4.2,
+    "key_ingredients": [
+      "\ud310\ud14c\ub180",
+      "\uace0\ubc1c\uc0c9 \uc548\ub8cc",
+      "\ube44\uc988\uc641\uc2a4"
+    ],
+    "keyword_sentiment": {
+      "\uc724\uad11": {
+        "mentioned_count": 63,
+        "positive_pct": 81
+      },
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 1163,
+        "positive_pct": 91
+      }
+    }
+  },
+  {
+    "id": "COLOR030",
+    "name": "\ud5e4\ub77c \ub9bd\ud2f4\ud2b8 \ud50c\ub7ec\uc2a4",
+    "brand": "\ud5e4\ub77c",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\ub9bd\ud2f4\ud2b8",
+    "price_krw": 37100,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 5482,
+    "avg_rating": 4.2,
+    "key_ingredients": [
+      "\uce74\uba5c\ub9ac\uc544\uaf43\uc624\uc77c",
+      "\uc2e4\ub9ac\ucf58 \ucf54\ud305 \ud30c\uc6b0\ub354",
+      "\ub9c8\uc774\ud06c\ub85c \ud384 \ud30c\uc6b0\ub354"
+    ],
+    "keyword_sentiment": {
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 1344,
+        "positive_pct": 96
+      },
+      "\uc724\uad11": {
+        "mentioned_count": 973,
+        "positive_pct": 75
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 1530,
+        "positive_pct": 87
+      },
+      "\ubc1c\ub9bc\uc131": {
+        "mentioned_count": 376,
+        "positive_pct": 73
+      }
+    }
+  },
+  {
+    "id": "COLOR031",
+    "name": "\uc544\ubaa8\uc2a4 \ub9e4\ud2b8 \ucfe0\uc158",
+    "brand": "\uc544\ubaa8\uc2a4",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\ub9e4\ud2b8 \ucfe0\uc158",
+    "price_krw": 48100,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 172,
+    "avg_rating": 4.1,
+    "key_ingredients": [
+      "\ub9c8\uc774\ud06c\ub85c \ud384 \ud30c\uc6b0\ub354",
+      "\ube44\ud0c0\ubbfcE",
+      "\uce74\uba5c\ub9ac\uc544\uaf43\uc624\uc77c"
+    ],
+    "keyword_sentiment": {
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 52,
+        "positive_pct": 74
+      },
+      "\uc724\uad11": {
+        "mentioned_count": 30,
+        "positive_pct": 78
+      },
+      "\ucee4\ubc84\ub825": {
+        "mentioned_count": 46,
+        "positive_pct": 94
+      }
+    }
+  },
+  {
+    "id": "COLOR032",
+    "name": "\ub86c\uc564 \uae00\ub85c\uc6b0 \ucfe0\uc158",
+    "brand": "\ub86c\uc564",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\uae00\ub85c\uc6b0 \ucfe0\uc158",
+    "price_krw": 37200,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 3489,
+    "avg_rating": 4.8,
+    "key_ingredients": [
+      "\ud2b8\ub9ac\ud2b8\uba3c\ud2b8 \uc624\uc77c",
+      "\uc800\ubd84\uc790 \ud788\uc54c\ub8e8\ub860\uc0b0",
+      "\uce74\uba5c\ub9ac\uc544\uaf43\uc624\uc77c"
+    ],
+    "keyword_sentiment": {
+      "\ucee4\ubc84\ub825": {
+        "mentioned_count": 592,
+        "positive_pct": 83
+      },
+      "\ubc1c\ub9bc\uc131": {
+        "mentioned_count": 65,
+        "positive_pct": 97
+      }
+    }
+  },
+  {
+    "id": "COLOR033",
+    "name": "\ub2ec\ubc14 \ube14\ub7ec \ud504\ub77c\uc774\uba38 2.0",
+    "brand": "\ub2ec\ubc14",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\ube14\ub7ec \ud504\ub77c\uc774\uba38",
+    "price_krw": 18800,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 5197,
+    "avg_rating": 4.7,
+    "key_ingredients": [
+      "\uc800\ubd84\uc790 \ud788\uc54c\ub8e8\ub860\uc0b0",
+      "\uc2e4\ub9ac\ucf58 \ucf54\ud305 \ud30c\uc6b0\ub354",
+      "\ub9c8\uc774\ud06c\ub85c \ud384 \ud30c\uc6b0\ub354"
+    ],
+    "keyword_sentiment": {
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 191,
+        "positive_pct": 88
+      },
+      "\uc724\uad11": {
+        "mentioned_count": 861,
+        "positive_pct": 94
+      },
+      "\ubc1c\ub9bc\uc131": {
+        "mentioned_count": 1187,
+        "positive_pct": 80
+      },
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 1457,
+        "positive_pct": 79
+      }
+    }
+  },
+  {
+    "id": "COLOR034",
+    "name": "\uc5b4\ud4e8 \ube14\ub80c\ub354\ube14 \ube14\ub7ec\uc154 \ud50c\ub7ec\uc2a4",
+    "brand": "\uc5b4\ud4e8",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\ube14\ub80c\ub354\ube14 \ube14\ub7ec\uc154",
+    "price_krw": 37200,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 4019,
+    "avg_rating": 4.6,
+    "key_ingredients": [
+      "\uc800\ubd84\uc790 \ud788\uc54c\ub8e8\ub860\uc0b0",
+      "\uce74\uba5c\ub9ac\uc544\uaf43\uc624\uc77c",
+      "\uc2e4\ub9ac\ucf58 \ucf54\ud305 \ud30c\uc6b0\ub354"
+    ],
+    "keyword_sentiment": {
+      "\uc724\uad11": {
+        "mentioned_count": 380,
+        "positive_pct": 70
+      },
+      "\ucee4\ubc84\ub825": {
+        "mentioned_count": 1053,
+        "positive_pct": 92
+      }
+    }
+  },
+  {
+    "id": "COLOR035",
+    "name": "\uc5d0\ub6f0\ub4dc \ub9bd\ud2f4\ud2b8",
+    "brand": "\uc5d0\ub6f0\ub4dc",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\ub9bd\ud2f4\ud2b8",
+    "price_krw": 33300,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 2340,
+    "avg_rating": 5.0,
+    "key_ingredients": [
+      "\ub9c8\uc774\ud06c\ub85c \ud384 \ud30c\uc6b0\ub354",
+      "\ud2b8\ub9ac\ud2b8\uba3c\ud2b8 \uc624\uc77c",
+      "\ube44\uc988\uc641\uc2a4"
+    ],
+    "keyword_sentiment": {
+      "\ucee4\ubc84\ub825": {
+        "mentioned_count": 586,
+        "positive_pct": 67
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 213,
+        "positive_pct": 85
+      }
+    }
+  },
+  {
+    "id": "COLOR036",
+    "name": "\ud074\ub9ac\uc624 \ucfe0\uc158 \ud30c\uc6b4\ub370\uc774\uc158 2.0",
+    "brand": "\ud074\ub9ac\uc624",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\ucfe0\uc158 \ud30c\uc6b4\ub370\uc774\uc158",
+    "price_krw": 37800,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 2089,
+    "avg_rating": 4.3,
+    "key_ingredients": [
+      "\ub9c8\uc774\ud06c\ub85c \ud384 \ud30c\uc6b0\ub354",
+      "\ube44\uc988\uc641\uc2a4",
+      "\ud310\ud14c\ub180"
+    ],
+    "keyword_sentiment": {
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 173,
+        "positive_pct": 70
+      },
+      "\ubc1c\ub9bc\uc131": {
+        "mentioned_count": 542,
+        "positive_pct": 87
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 84,
+        "positive_pct": 71
+      },
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 477,
+        "positive_pct": 79
+      }
+    }
+  },
+  {
+    "id": "COLOR037",
+    "name": "\ub86c\uc564 \ucfe0\uc158 \ud30c\uc6b4\ub370\uc774\uc158 \ud50c\ub7ec\uc2a4",
+    "brand": "\ub86c\uc564",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\ucfe0\uc158 \ud30c\uc6b4\ub370\uc774\uc158",
+    "price_krw": 34100,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 1988,
+    "avg_rating": 4.3,
+    "key_ingredients": [
+      "\ube44\uc988\uc641\uc2a4",
+      "\ud2b8\ub9ac\ud2b8\uba3c\ud2b8 \uc624\uc77c",
+      "\ub9c8\uc774\ud06c\ub85c \ud384 \ud30c\uc6b0\ub354"
+    ],
+    "keyword_sentiment": {
+      "\ubc1c\ub9bc\uc131": {
+        "mentioned_count": 220,
+        "positive_pct": 89
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 117,
+        "positive_pct": 83
+      },
+      "\uc724\uad11": {
+        "mentioned_count": 282,
+        "positive_pct": 69
+      }
+    }
+  },
+  {
+    "id": "COLOR038",
+    "name": "\ubbf8\uc0e4 \uae00\ub798\uc2a4 \ud2f4\ud2b8",
+    "brand": "\ubbf8\uc0e4",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\uae00\ub798\uc2a4 \ud2f4\ud2b8",
+    "price_krw": 13600,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 162,
+    "avg_rating": 4.1,
+    "key_ingredients": [
+      "\uc800\ubd84\uc790 \ud788\uc54c\ub8e8\ub860\uc0b0",
+      "\ud310\ud14c\ub180",
+      "\ub9c8\uc774\ud06c\ub85c \ud384 \ud30c\uc6b0\ub354"
+    ],
+    "keyword_sentiment": {
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 33,
+        "positive_pct": 73
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 32,
+        "positive_pct": 76
+      },
+      "\ubc1c\ub9bc\uc131": {
+        "mentioned_count": 43,
+        "positive_pct": 93
+      }
+    }
+  },
+  {
+    "id": "COLOR039",
+    "name": "\ud5e4\ub77c \uae00\ub798\uc2a4 \ud2f4\ud2b8 \ud50c\ub7ec\uc2a4",
+    "brand": "\ud5e4\ub77c",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\uae00\ub798\uc2a4 \ud2f4\ud2b8",
+    "price_krw": 9600,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 2510,
+    "avg_rating": 4.3,
+    "key_ingredients": [
+      "\ube44\ud0c0\ubbfcE",
+      "\ud2b8\ub9ac\ud2b8\uba3c\ud2b8 \uc624\uc77c",
+      "\uc800\ubd84\uc790 \ud788\uc54c\ub8e8\ub860\uc0b0"
+    ],
+    "keyword_sentiment": {
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 615,
+        "positive_pct": 98
+      },
+      "\ucee4\ubc84\ub825": {
+        "mentioned_count": 203,
+        "positive_pct": 89
+      },
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 203,
+        "positive_pct": 73
+      }
+    }
+  },
+  {
+    "id": "COLOR040",
+    "name": "\ud398\ub9ac\ud398\ub77c \ube14\ub80c\ub354\ube14 \ube14\ub7ec\uc154 PRO",
+    "brand": "\ud398\ub9ac\ud398\ub77c",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\ube14\ub80c\ub354\ube14 \ube14\ub7ec\uc154",
+    "price_krw": 30500,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 2575,
+    "avg_rating": 4.3,
+    "key_ingredients": [
+      "\ube44\uc988\uc641\uc2a4",
+      "\ud310\ud14c\ub180",
+      "\ub9c8\uc774\ud06c\ub85c \ud384 \ud30c\uc6b0\ub354"
+    ],
+    "keyword_sentiment": {
+      "\ucee4\ubc84\ub825": {
+        "mentioned_count": 282,
+        "positive_pct": 96
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 638,
+        "positive_pct": 77
+      },
+      "\ubc1c\ub9bc\uc131": {
+        "mentioned_count": 498,
+        "positive_pct": 71
+      }
+    }
+  },
+  {
+    "id": "COLOR041",
+    "name": "\ud640\ub9ac\uce74\ud640\ub9ac\uce74 \uae00\ub798\uc2a4 \ud2f4\ud2b8 \ud50c\ub7ec\uc2a4",
+    "brand": "\ud640\ub9ac\uce74\ud640\ub9ac\uce74",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\uae00\ub798\uc2a4 \ud2f4\ud2b8",
+    "price_krw": 26100,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 3647,
+    "avg_rating": 4.3,
+    "key_ingredients": [
+      "\ud544\ub984\ud615\uc131 \ud3f4\ub9ac\uba38",
+      "\ube44\uc988\uc641\uc2a4",
+      "\ud310\ud14c\ub180"
+    ],
+    "keyword_sentiment": {
+      "\ubc1c\ub9bc\uc131": {
+        "mentioned_count": 441,
+        "positive_pct": 95
+      },
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 673,
+        "positive_pct": 76
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 845,
+        "positive_pct": 85
+      },
+      "\uc724\uad11": {
+        "mentioned_count": 626,
+        "positive_pct": 96
+      }
+    }
+  },
+  {
+    "id": "COLOR042",
+    "name": "\ud074\ub9ac\uc624 \ub9bd\ud2f4\ud2b8",
+    "brand": "\ud074\ub9ac\uc624",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\ub9bd\ud2f4\ud2b8",
+    "price_krw": 36900,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 1593,
+    "avg_rating": 4.1,
+    "key_ingredients": [
+      "\ud544\ub984\ud615\uc131 \ud3f4\ub9ac\uba38",
+      "\uace0\ubc1c\uc0c9 \uc548\ub8cc",
+      "\ub9c8\uc774\ud06c\ub85c \ud384 \ud30c\uc6b0\ub354"
+    ],
+    "keyword_sentiment": {
+      "\ubc1c\ub9bc\uc131": {
+        "mentioned_count": 137,
+        "positive_pct": 93
+      },
+      "\ucee4\ubc84\ub825": {
+        "mentioned_count": 438,
+        "positive_pct": 83
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 455,
+        "positive_pct": 69
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 449,
+        "positive_pct": 91
+      }
+    }
+  },
+  {
+    "id": "COLOR043",
+    "name": "\uc785\uc0dd\ub85c\ub791 \ube14\ub7ec \ud504\ub77c\uc774\uba38 \ud50c\ub7ec\uc2a4",
+    "brand": "\uc785\uc0dd\ub85c\ub791",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\ube14\ub7ec \ud504\ub77c\uc774\uba38",
+    "price_krw": 49400,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 3208,
+    "avg_rating": 4.8,
+    "key_ingredients": [
+      "\ud310\ud14c\ub180",
+      "\uce74\uba5c\ub9ac\uc544\uaf43\uc624\uc77c",
+      "\uc800\ubd84\uc790 \ud788\uc54c\ub8e8\ub860\uc0b0"
+    ],
+    "keyword_sentiment": {
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 1011,
+        "positive_pct": 90
+      },
+      "\ubc1c\ub9bc\uc131": {
+        "mentioned_count": 1067,
+        "positive_pct": 91
+      }
+    }
+  },
+  {
+    "id": "COLOR044",
+    "name": "\ud074\ub9ac\uc624 \ub9bd\ud2f4\ud2b8 PRO",
+    "brand": "\ud074\ub9ac\uc624",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\ub9bd\ud2f4\ud2b8",
+    "price_krw": 17500,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 5420,
+    "avg_rating": 4.4,
+    "key_ingredients": [
+      "\ube44\uc988\uc641\uc2a4",
+      "\ube44\ud0c0\ubbfcE",
+      "\ud2b8\ub9ac\ud2b8\uba3c\ud2b8 \uc624\uc77c"
+    ],
+    "keyword_sentiment": {
+      "\ucee4\ubc84\ub825": {
+        "mentioned_count": 1660,
+        "positive_pct": 92
+      },
+      "\ubc1c\ub9bc\uc131": {
+        "mentioned_count": 246,
+        "positive_pct": 65
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 231,
+        "positive_pct": 81
+      },
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 484,
+        "positive_pct": 97
+      }
+    }
+  },
+  {
+    "id": "COLOR045",
+    "name": "\ubbf8\uc0e4 \uae00\ub85c\uc6b0 \ucfe0\uc158 \ud50c\ub7ec\uc2a4",
+    "brand": "\ubbf8\uc0e4",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\uae00\ub85c\uc6b0 \ucfe0\uc158",
+    "price_krw": 14300,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 2540,
+    "avg_rating": 4.3,
+    "key_ingredients": [
+      "\uc800\ubd84\uc790 \ud788\uc54c\ub8e8\ub860\uc0b0",
+      "\ube44\ud0c0\ubbfcE",
+      "\uce74\uba5c\ub9ac\uc544\uaf43\uc624\uc77c"
+    ],
+    "keyword_sentiment": {
+      "\ucee4\ubc84\ub825": {
+        "mentioned_count": 386,
+        "positive_pct": 84
+      },
+      "\uc724\uad11": {
+        "mentioned_count": 381,
+        "positive_pct": 94
+      },
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 833,
+        "positive_pct": 78
+      }
+    }
+  },
+  {
+    "id": "COLOR046",
+    "name": "\ubbf8\uc0e4 \ub9e4\ud2b8 \ucfe0\uc158 PRO",
+    "brand": "\ubbf8\uc0e4",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\ub9e4\ud2b8 \ucfe0\uc158",
+    "price_krw": 11200,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 6757,
+    "avg_rating": 4.2,
+    "key_ingredients": [
+      "\ube44\uc988\uc641\uc2a4",
+      "\ud2b8\ub9ac\ud2b8\uba3c\ud2b8 \uc624\uc77c",
+      "\uce74\uba5c\ub9ac\uc544\uaf43\uc624\uc77c"
+    ],
+    "keyword_sentiment": {
+      "\ucee4\ubc84\ub825": {
+        "mentioned_count": 477,
+        "positive_pct": 75
+      },
+      "\uc724\uad11": {
+        "mentioned_count": 1029,
+        "positive_pct": 98
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 744,
+        "positive_pct": 75
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 1385,
+        "positive_pct": 92
+      }
+    }
+  },
+  {
+    "id": "COLOR047",
+    "name": "\uc785\uc0dd\ub85c\ub791 \ube14\ub80c\ub354\ube14 \ube14\ub7ec\uc154 \ud50c\ub7ec\uc2a4",
+    "brand": "\uc785\uc0dd\ub85c\ub791",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\ube14\ub80c\ub354\ube14 \ube14\ub7ec\uc154",
+    "price_krw": 10400,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 6160,
+    "avg_rating": 4.4,
+    "key_ingredients": [
+      "\uace0\ubc1c\uc0c9 \uc548\ub8cc",
+      "\ube44\ud0c0\ubbfcE",
+      "\uc800\ubd84\uc790 \ud788\uc54c\ub8e8\ub860\uc0b0"
+    ],
+    "keyword_sentiment": {
+      "\uc9c0\uc18d\ub825": {
+        "mentioned_count": 39,
+        "positive_pct": 78
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 451,
+        "positive_pct": 82
+      },
+      "\ubc1c\ub9bc\uc131": {
+        "mentioned_count": 1570,
+        "positive_pct": 69
+      },
+      "\uc724\uad11": {
+        "mentioned_count": 1212,
+        "positive_pct": 71
+      }
+    }
+  },
+  {
+    "id": "COLOR048",
+    "name": "3CE \uc544\uc774 \ud314\ub808\ud2b8",
+    "brand": "3CE",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\uc544\uc774 \ud314\ub808\ud2b8",
+    "price_krw": 41700,
+    "channel": "\uc62c\ub9ac\ube0c\uc601",
+    "review_count": 2687,
+    "avg_rating": 4.7,
+    "key_ingredients": [
+      "\ud310\ud14c\ub180",
+      "\uc800\ubd84\uc790 \ud788\uc54c\ub8e8\ub860\uc0b0",
+      "\uace0\ubc1c\uc0c9 \uc548\ub8cc"
+    ],
+    "keyword_sentiment": {
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 146,
+        "positive_pct": 87
+      },
+      "\ubc1c\ub9bc\uc131": {
+        "mentioned_count": 390,
+        "positive_pct": 94
+      },
+      "\uc724\uad11": {
+        "mentioned_count": 662,
+        "positive_pct": 76
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 863,
+        "positive_pct": 84
+      }
+    }
+  },
+  {
+    "id": "COLOR049",
+    "name": "3CE \ub9e4\ud2b8 \ucfe0\uc158 2.0",
+    "brand": "3CE",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\ub9e4\ud2b8 \ucfe0\uc158",
+    "price_krw": 28100,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 5800,
+    "avg_rating": 4.2,
+    "key_ingredients": [
+      "\uce74\uba5c\ub9ac\uc544\uaf43\uc624\uc77c",
+      "\ud2b8\ub9ac\ud2b8\uba3c\ud2b8 \uc624\uc77c",
+      "\ub9c8\uc774\ud06c\ub85c \ud384 \ud30c\uc6b0\ub354"
+    ],
+    "keyword_sentiment": {
+      "\ubc1c\ub9bc\uc131": {
+        "mentioned_count": 886,
+        "positive_pct": 73
+      },
+      "\ubc00\ucc29\ub825": {
+        "mentioned_count": 1207,
+        "positive_pct": 89
+      }
+    }
+  },
+  {
+    "id": "COLOR050",
+    "name": "\ud0ec\ubc84\ub9b0\uc988 \ucfe0\uc158 \ud30c\uc6b4\ub370\uc774\uc158 2.0",
+    "brand": "\ud0ec\ubc84\ub9b0\uc988",
+    "category": "\uc0c9\uc870\uc81c\ud488",
+    "subtype": "\ucfe0\uc158 \ud30c\uc6b4\ub370\uc774\uc158",
+    "price_krw": 18500,
+    "channel": "\ub124\uc774\ubc84\uc1fc\ud551",
+    "review_count": 2697,
+    "avg_rating": 4.4,
+    "key_ingredients": [
+      "\ube44\ud0c0\ubbfcE",
+      "\ube44\uc988\uc641\uc2a4",
+      "\ub9c8\uc774\ud06c\ub85c \ud384 \ud30c\uc6b0\ub354"
+    ],
+    "keyword_sentiment": {
+      "\ubc1c\ub9bc\uc131": {
+        "mentioned_count": 39,
+        "positive_pct": 96
+      },
+      "\ucee4\ubc84\ub825": {
+        "mentioned_count": 169,
+        "positive_pct": 77
+      },
+      "\uc0b0\ub73b\ud568": {
+        "mentioned_count": 864,
+        "positive_pct": 89
+      }
+    }
+  }
+];
